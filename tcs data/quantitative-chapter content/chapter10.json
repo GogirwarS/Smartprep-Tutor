@@ -1,0 +1,27 @@
+{
+    "chapter_title": "Boats and Streams",
+    "sections": [
+      {
+        "title": "Concepts of Stream Direction",
+        "content": [
+          "Downstream: Movement of the boat along the direction of the stream (faster).",
+          "Upstream: Movement of the boat against the direction of the stream (slower)."
+        ]
+      },
+      {
+        "title": "Speed Formulas (when boat speed in still water is u and stream speed is v)",
+        "content": [
+          "Speed Downstream = u + v km/hr",
+          "Speed Upstream = u − v km/hr"
+        ]
+      },
+      {
+        "title": "Formulas (when downstream speed is a and upstream speed is b)",
+        "content": [
+          "Speed in still water = (a + b) / 2 km/hr",
+          "Rate of stream = (a − b) / 2 km/hr"
+        ]
+      }
+    ]
+  }
+  

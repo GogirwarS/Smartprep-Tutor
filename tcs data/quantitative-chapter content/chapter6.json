@@ -1,0 +1,27 @@
+{
+    "chapter_title": "Simple Interest",
+    "sections": [
+      {
+        "title": "Key Definitions",
+        "content": [
+          "Principal (P): The money borrowed or lent for a certain period.",
+          "Interest: Extra money paid for using someone else's money.",
+          "Simple Interest (S.I.): Interest calculated uniformly over time on the principal amount."
+        ]
+      },
+      {
+        "title": "Formulas for Simple Interest",
+        "content": [
+          "Simple Interest (S.I.) = (P × R × T) / 100",
+          "Where:",
+          "- P = Principal",
+          "- R = Rate of interest per annum",
+          "- T = Time in years",
+          "To find Principal: P = (S.I. × 100) / (R × T)",
+          "To find Rate: R = (S.I. × 100) / (P × T)",
+          "To find Time: T = (S.I. × 100) / (P × R)"
+        ]
+      }
+    ]
+  }
+  

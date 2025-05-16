@@ -1,0 +1,52 @@
+{
+    "chapter_title": "Speed, Distance and Time",
+    "sections": [
+      {
+        "title": "Basic Formulas",
+        "content": [
+          "Distance = Speed × Time",
+          "Speed = Distance / Time",
+          "Time = Distance / Speed",
+          "1 km/hr = 5/18 m/s",
+          "1 m/s = 18/5 km/hr"
+        ]
+      },
+      {
+        "title": "Ratios and Comparisons",
+        "content": [
+          "If the ratio of speeds of A and B is a:b, then the ratio of times to cover the same distance is b:a (or 1/a : 1/b)"
+        ]
+      },
+      {
+        "title": "Average Speed (Different Distances & Speeds)",
+        "content": [
+          "Average Speed = Total Distance / Total Time",
+          "Example:",
+          "- First 30 km at 15 km/hr → Time = 30 / 15 = 2 hours",
+          "- Next 40 km at 10 km/hr → Time = 40 / 10 = 4 hours",
+          "- Last 30 km at 30 km/hr → Time = 30 / 30 = 1 hour",
+          "- Total Distance = 100 km, Total Time = 7 hours",
+          "- Average Speed = 100 / 7 ≈ 14.29 km/hr"
+        ]
+      },
+      {
+        "title": "Average Speed Based on Conditions",
+        "content": [
+          "If Distance is constant:",
+          "Average Speed = (2 × Speed1 × Speed2) / (Speed1 + Speed2)",
+          "If Time is constant:",
+          "Average Speed = (Speed1 + Speed2) / 2"
+        ]
+      },
+      {
+        "title": "Relative Speed",
+        "content": [
+          "If two bodies move in opposite directions at S1 and S2:",
+          "Relative Speed = S1 + S2",
+          "If two bodies move in the same direction at S1 and S2:",
+          "Relative Speed = |S1 − S2|"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,38 @@
+{
+    "chapter_title": "Percentage",
+    "sections": [
+      {
+        "title": "Basics of Percentage",
+        "content": [
+          "Expressing a value out of 100 means Percentage.",
+          "To convert Percentage to Fraction: e.g., 20% → 20 / 100 = 1/5",
+          "To convert Fraction to Percentage: e.g., 2/5 × 100 = 40%"
+        ],
+        "image_path": "images/Percentage1"
+      },
+      {
+        "title": "Percentage Change",
+        "content": [
+          "Percentage Change = (Change in Value / Original Value) × 100"
+        ]
+      },
+      {
+        "title": "Consumption Adjustment Based on Price Change",
+        "content": [
+          "If the price of a commodity increases by R%, then reduction in consumption to keep expenditure same:",
+          "Reduction % = [R / (100 + R)] × 100",
+          "If the price decreases by R%, then increase in consumption to keep expenditure same:",
+          "Increase % = [R / (100 − R)] × 100"
+        ]
+      },
+      {
+        "title": "Population Growth Formula",
+        "content": [
+          "Let the current population be P.",
+          "If it increases at a rate of R% per annum, then population after n years is:",
+          "Population = P × (1 + R/100)^n"
+        ]
+      }
+    ]
+  }
+  

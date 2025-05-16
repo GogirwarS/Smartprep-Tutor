@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ category_name }} Chapters | Learning Platform{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>{{ category_name }} Chapters</h2>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+        </a>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="list-group">
+                {% for chapter in chapters %}
+                <a href="{{ url_for('chapter_content', category=category, chapter=chapter.id) }}" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ chapter.name }}</h5>
+                        <small class="text-muted">{{ chapter.level }}</small>
+                    </div>
+                    <p class="mb-1">{{ chapter.description }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

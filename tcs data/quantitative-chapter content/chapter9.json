@@ -1,0 +1,41 @@
+{
+    "chapter_title": "Problems on Trains",
+    "sections": [
+      {
+        "title": "Basic Concepts",
+        "content": [
+          "1. Time taken by a train of length X meters to pass a pole or a standing person = Time to cover X meters = X / Speed",
+          "2. Time taken by a train of length X meters to pass a stationary object of length b meters = Time to cover (X + b) meters = (X + b) / Speed"
+        ]
+      },
+      {
+        "title": "Relative Speed",
+        "content": [
+          "3. If two trains are moving in the same direction at u m/s and v m/s (u > v), their relative speed = u − v m/s",
+          "4. If two trains are moving in opposite directions at u m/s and v m/s, their relative speed = u + v m/s"
+        ]
+      },
+      {
+        "title": "Time to Cross Each Other",
+        "content": [
+          "5. Two trains of length a meters and b meters moving in opposite directions at u m/s and v m/s:",
+          "Time to cross = (a + b) / (u + v) seconds"
+        ]
+      },
+      {
+        "title": "Time to Overtake (Same Direction)",
+        "content": [
+          "6. Two trains of length a meters and b meters moving in the same direction at u m/s and v m/s (u > v):",
+          "Time to cross = (a + b) / (u − v) seconds"
+        ]
+      },
+      {
+        "title": "Speed Ratio from Remaining Times After Meeting",
+        "content": [
+          "7. Two trains start at the same time from points A and B toward each other. After meeting, they take a and b seconds to reach B and A respectively:",
+          "Speed of A : Speed of B = √b : √a"
+        ]
+      }
+    ]
+  }
+  

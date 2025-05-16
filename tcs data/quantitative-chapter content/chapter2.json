@@ -1,0 +1,70 @@
+{
+    "chapter_title": "HCF & LCM",
+    "sections": [
+      {
+        "title": "H.C.F. (Highest Common Factor)",
+        "content": [
+          "The H.C.F. of two or more than two numbers is the greatest number that divides each of them exactly.",
+          "There are two methods to find HCF:"
+        ],
+        "subsections": [
+          {
+            "title": "Factorization Method",
+            "description": "Express each number as a product of prime factors. The product of the common factors gives the HCF.",
+            "example": "Find the H.C.F of 804 and 420.",
+            "image_path": "images/HCF_LCM1"
+          },
+          {
+            "title": "Division Method",
+            "description": "Divide the larger number by the smaller. Continue dividing previous divisor by remainder until remainder is zero. The last divisor is the HCF.",
+            "example": [
+              "804 / 210 → 210 × 3 = 630 → R = 174",
+              "210 / 174 → 174 × 1 = 174 → R = 36",
+              "174 / 36 → 36 × 4 = 144 → R = 30",
+              "36 / 30 → 30 × 1 = 30 → R = 6",
+              "30 / 6 → 6 × 5 = 30 → R = 0",
+              "Hence HCF is 6"
+            ]
+          },
+          {
+            "title": "Finding HCF of more than two numbers",
+            "description": "Find HCF of any two numbers first, then with the third, and so on.",
+            "example": "Find HCF of 20, 36, 100 → HCF(20, 36) = 4; HCF(4, 100) = 4 → Final HCF = 4"
+          }
+        ]
+      },
+      {
+        "title": "L.C.M. (Least Common Multiple)",
+        "content": [
+          "The least number divisible by all the given numbers is called their LCM.",
+          "Use factorization with common multiples. LCM is the product of all factors."
+        ],
+        "example": "Find the LCM of 24, 30, 16",
+        "image_path": "images/HCF_LCM2",
+        "note": "If the greatest number is a multiple of all others, that number is the LCM. Example: LCM of 24, 4, 8 → 24"
+      },
+      {
+        "title": "Useful Properties",
+        "content": [
+          "Product of two numbers = Product of their H.C.F. and L.C.M.",
+          "Co-prime Numbers: Two numbers are co-prime if their HCF = 1",
+          "If one number is a multiple of another → HCF = smaller number, LCM = larger number"
+        ]
+      },
+      {
+        "title": "HCF and LCM of Fractions",
+        "content": [
+          "HCF of Fraction = HCF of Numerators / LCM of Denominators",
+          "LCM of Fraction = LCM of Numerators / HCF of Denominators"
+        ]
+      },
+      {
+        "title": "Remainder Based Problems",
+        "content": [
+          "If X is remainder when N is divided by x, y, z then: N = K × LCM(x, y, z) + X",
+          "If A, B, C are remainders and x − A = y − B = z − C = P then: N = K × LCM(x, y, z) − P"
+        ]
+      }
+    ]
+  }
+  

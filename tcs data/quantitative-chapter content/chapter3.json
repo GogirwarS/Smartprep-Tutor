@@ -1,0 +1,31 @@
+{
+    "chapter_title": "Averages",
+    "sections": [
+      {
+        "title": "Definition",
+        "content": [
+          "Average = Sum of Observations / Number of Observations"
+        ]
+      },
+      {
+        "title": "Grouped Averages",
+        "content": [
+          "Group 1:",
+          "Average = A1, Sum of Observations = S1, Number of Observations = N1",
+          "Group 2:",
+          "Average = A2, Sum of Observations = S2, Number of Observations = N2"
+        ],
+        "note": "If Group 1 and Group 2 are combined, the average becomes A = (S1 + S2) / (N1 + N2)"
+      },
+      {
+        "title": "Replacement Problems",
+        "content": [
+          "If the average of a group of N people changes by P kg when a person with weight W kg is replaced, then:",
+          "- If average increases: New person’s weight = W + P × N",
+          "- If average decreases: New person’s weight = W − P × N"
+        ],
+        "example": "The average weight of 5 persons decreases by 2 kg when a 50 kg man is replaced. New person's weight = 50 − (5 × 2) = 40 kg"
+      }
+    ]
+  }
+  

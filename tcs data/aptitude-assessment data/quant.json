@@ -1,0 +1,1158 @@
+{
+  "subject": "Quantitative Aptitude",
+  "topics": [
+    {
+      "name": "Number System",
+      "questions": [
+        {
+          "id": "QNS01",
+          "question": "What is the HCF of 54, 72 and 108?",
+          "options": ["6", "9", "18", "36"],
+          "answer": "18"
+        },
+        {
+          "id": "QNS02",
+          "question": "The sum of first 15 natural numbers is:",
+          "options": ["105", "115", "120", "130"],
+          "answer": "120"
+        },
+        {
+          "id": "QNS03",
+          "question": "If a number is divisible by both 3 and 4, it must be divisible by:",
+          "options": ["7", "12", "6", "9"],
+          "answer": "12"
+        },
+        {
+          "id": "QNS04",
+          "question": "The smallest 4-digit number exactly divisible by 88 is:",
+          "options": ["1000", "1056", "1012", "1016"],
+          "answer": "1056"
+        },
+        {
+          "id": "QNS05",
+          "question": "What is the remainder when 2^25 is divided by 7?",
+          "options": ["1", "2", "4", "6"],
+          "answer": "4"
+        },
+        {
+          "id": "QNS06",
+          "question": "If the product of two consecutive integers is 72, what is their sum?",
+          "options": ["15", "16", "17", "18"],
+          "answer": "17"
+        },
+        {
+          "id": "QNS07",
+          "question": "What is the unit digit of 3^19?",
+          "options": ["3", "7", "1", "9"],
+          "answer": "7"
+        },
+        {
+          "id": "QNS08",
+          "question": "If the sum of digits of a two-digit number is 15 and the difference between the digits is 3, what is the number?",
+          "options": ["69", "78", "87", "96"],
+          "answer": "96"
+        },
+        {
+          "id": "QNS09",
+          "question": "How many numbers between 100 and 300 are divisible by both 5 and 7?",
+          "options": ["5", "6", "7", "8"],
+          "answer": "6"
+        },
+        {
+          "id": "QNS10",
+          "question": "The product of two co-prime numbers is 221. The numbers are:",
+          "options": ["13 and 17", "11 and 21", "13 and 19", "17 and 13"],
+          "answer": "13 and 17"
+        }
+      ]
+    },
+    {
+      "name": "LCM & HCF",
+      "questions": [
+        {
+          "id": "QLCM01",
+          "question": "The LCM of 12, 18 and 30 is:",
+          "options": ["60", "90", "120", "180"],
+          "answer": "180"
+        },
+        {
+          "id": "QLCM02",
+          "question": "The HCF of two numbers is 12 and their LCM is 336. If one of the numbers is 84, what is the other number?",
+          "options": ["38", "42", "48", "58"],
+          "answer": "48"
+        },
+        {
+          "id": "QLCM03",
+          "question": "The LCM of two numbers is 495 and their HCF is 5. If one of the numbers is 55, what is the other number?",
+          "options": ["35", "40", "45", "50"],
+          "answer": "45"
+        },
+        {
+          "id": "QLCM04",
+          "question": "The HCF of 1.2, 0.36 and 0.48 is:",
+          "options": ["0.12", "0.6", "0.06", "0.036"],
+          "answer": "0.12"
+        },
+        {
+          "id": "QLCM05",
+          "question": "If the product of two numbers is 216 and their HCF is 6, how many different values can their LCM have?",
+          "options": ["2", "3", "4", "6"],
+          "answer": "4"
+        },
+        {
+          "id": "QLCM06",
+          "question": "If the LCM of two numbers is equal to their product, what is the relationship between the numbers?",
+          "options": ["They are equal", "They are co-prime", "They are prime", "They are multiples of each other"],
+          "answer": "They are co-prime"
+        },
+        {
+          "id": "QLCM07",
+          "question": "The LCM of all numbers from 1 to 5 is:",
+          "options": ["30", "60", "120", "180"],
+          "answer": "60"
+        },
+        {
+          "id": "QLCM08",
+          "question": "The LCM of fractions 2/3, 3/4 and 5/6 is:",
+          "options": ["5", "10", "15", "30"],
+          "answer": "10"
+        },
+        {
+          "id": "QLCM09",
+          "question": "The HCF of 144 and 180 is:",
+          "options": ["12", "18", "24", "36"],
+          "answer": "36"
+        },
+        {
+          "id": "QLCM10",
+          "question": "If the HCF of two numbers is 8 and their product is 6144, what is their LCM?",
+          "options": ["384", "512", "768", "1024"],
+          "answer": "768"
+        }
+      ]
+    },
+    {
+      "name": "Divisibility Rules",
+      "questions": [
+        {
+          "id": "QDR01",
+          "question": "A number is divisible by 11 if:",
+          "options": ["Sum of digits is divisible by 11", "Difference of sum of digits at odd and even places is divisible by 11", "Sum of alternate digits is divisible by 11", "Product of first and last digit is divisible by 11"],
+          "answer": "Difference of sum of digits at odd and even places is divisible by 11"
+        },
+        {
+          "id": "QDR02",
+          "question": "Which of the following numbers is divisible by both 8 and 12?",
+          "options": ["248", "264", "336", "396"],
+          "answer": "336"
+        },
+        {
+          "id": "QDR03",
+          "question": "A number is divisible by 6 if:",
+          "options": ["It is divisible by 2 or 3", "It is divisible by 2 and 3", "Last digit is 6", "Sum of digits is 6"],
+          "answer": "It is divisible by 2 and 3"
+        },
+        {
+          "id": "QDR04",
+          "question": "Which of the following is divisible by 9?",
+          "options": ["4281", "5372", "6381", "7254"],
+          "answer": "6381"
+        },
+        {
+          "id": "QDR05",
+          "question": "A number is divisible by 4 if:",
+          "options": ["Last digit is divisible by 4", "Last two digits are divisible by 4", "Sum of digits is divisible by 4", "First two digits are divisible by 4"],
+          "answer": "Last two digits are divisible by 4"
+        },
+        {
+          "id": "QDR06",
+          "question": "The smallest 5-digit number which is exactly divisible by 41 is:",
+          "options": ["10000", "10004", "10025", "10045"],
+          "answer": "10004"
+        },
+        {
+          "id": "QDR07",
+          "question": "Which test of divisibility is common for both 5 and 10?",
+          "options": ["Last digit is 0", "Last digit is 0 or 5", "Sum of digits is divisible by 5", "Last digit is 5"],
+          "answer": "Last digit is 0"
+        },
+        {
+          "id": "QDR08",
+          "question": "Which of the following numbers is divisible by 13?",
+          "options": ["1027", "1105", "1170", "1235"],
+          "answer": "1105"
+        },
+        {
+          "id": "QDR09",
+          "question": "A number is divisible by 15 if it is divisible by:",
+          "options": ["3 and 5", "3 or 5", "5 only", "3 only"],
+          "answer": "3 and 5"
+        },
+        {
+          "id": "QDR10",
+          "question": "Which of the following numbers is NOT divisible by 7?",
+          "options": ["161", "343", "574", "637"],
+          "answer": "574"
+        }
+      ]
+    },
+    {
+      "name": "Averages",
+      "questions": [
+        {
+          "id": "QAVG01",
+          "question": "The average of first 50 natural numbers is:",
+          "options": ["25", "25.5", "50", "50.5"],
+          "answer": "25.5"
+        },
+        {
+          "id": "QAVG02",
+          "question": "The average of 5 consecutive odd numbers is 55. What is the largest of these numbers?",
+          "options": ["57", "59", "61", "63"],
+          "answer": "63"
+        },
+        {
+          "id": "QAVG03",
+          "question": "The average weight of 16 boys in a class is 50.25 kg. If the weight of the teacher is included, the average rises to 51 kg. What is the weight of the teacher?",
+          "options": ["62 kg", "64 kg", "66 kg", "68 kg"],
+          "answer": "64 kg"
+        },
+        {
+          "id": "QAVG04",
+          "question": "The average of 20 numbers is 15 and the average of first 10 numbers is 12. What is the average of the last 10 numbers?",
+          "options": ["17", "18", "19", "20"],
+          "answer": "18"
+        },
+        {
+          "id": "QAVG05",
+          "question": "The average age of a family of 5 members is 28 years. If the age of the youngest member is 8 years, what is the average age of the family excluding the youngest member?",
+          "options": ["32.5 years", "33 years", "34 years", "35 years"],
+          "answer": "33 years"
+        },
+        {
+          "id": "QAVG06",
+          "question": "The average of 11 numbers is 10.9. If the average of the first six numbers is 10.5 and that of the last six numbers is 11.4, what is the middle (6th) number?",
+          "options": ["10.8", "11", "11.5", "12"],
+          "answer": "11.5"
+        },
+        {
+          "id": "QAVG07",
+          "question": "The average score of a cricketer for 11 innings was 39 runs. If the highest score is excluded, the average becomes 36. What is the highest score?",
+          "options": ["69", "72", "74", "79"],
+          "answer": "69"
+        },
+        {
+          "id": "QAVG08",
+          "question": "The average of four consecutive even numbers is 27. What is the largest of these numbers?",
+          "options": ["28", "30", "32", "34"],
+          "answer": "30"
+        },
+        {
+          "id": "QAVG09",
+          "question": "A batsman scores 87 runs in his 17th innings and increases his average by 3. What was his average before the 17th innings?",
+          "options": ["36", "39", "42", "45"],
+          "answer": "39"
+        },
+        {
+          "id": "QAVG10",
+          "question": "The average monthly income of a person in the first 4 months is Rs. 3500 and the average monthly income in the next 8 months is Rs. 4000. The average monthly income for the whole year is:",
+          "options": ["Rs. 3750", "Rs. 3800", "Rs. 3833.33", "Rs. 3900"],
+          "answer": "Rs. 3833.33"
+        }
+      ]
+    },
+    {
+      "name": "Percentages",
+      "questions": [
+        {
+          "id": "QPER01",
+          "question": "What is 25% of 80?",
+          "options": ["15", "18", "20", "25"],
+          "answer": "20"
+        },
+        {
+          "id": "QPER02",
+          "question": "If A is 30% more than B, then B is what percent less than A?",
+          "options": ["20%", "23%", "25%", "30%"],
+          "answer": "23%"
+        },
+        {
+          "id": "QPER03",
+          "question": "If the price of a commodity increases by 25%, by what percentage should the consumption be reduced to maintain the same expenditure?",
+          "options": ["15%", "20%", "25%", "30%"],
+          "answer": "20%"
+        },
+        {
+          "id": "QPER04",
+          "question": "Two numbers are respectively 20% and 25% more than a third number. What percentage is the first number of the second number?",
+          "options": ["92%", "94%", "96%", "98%"],
+          "answer": "96%"
+        },
+        {
+          "id": "QPER05",
+          "question": "What percent of 120 is 90?",
+          "options": ["65%", "70%", "75%", "80%"],
+          "answer": "75%"
+        },
+        {
+          "id": "QPER06",
+          "question": "If A's salary is 25% more than B's salary, by what percent is B's salary less than A's?",
+          "options": ["15%", "20%", "22.5%", "25%"],
+          "answer": "20%"
+        },
+        {
+          "id": "QPER07",
+          "question": "If 60% of a number is 450, what is 80% of the same number?",
+          "options": ["480", "540", "600", "720"],
+          "answer": "600"
+        },
+        {
+          "id": "QPER08",
+          "question": "Population of a town increased by 5% from 2018 to 2019 and decreased by 10% from 2019 to 2020. What is the net percentage change in population from 2018 to 2020?",
+          "options": ["Decrease of 5%", "Decrease of 5.5%", "Decrease of 6%", "Decrease of 4.5%"],
+          "answer": "Decrease of 5.5%"
+        },
+        {
+          "id": "QPER09",
+          "question": "The price of a commodity is reduced by 10%. By what percentage should it be increased to bring it back to the original price?",
+          "options": ["9%", "10%", "11%", "11.11%"],
+          "answer": "11.11%"
+        },
+        {
+          "id": "QPER10",
+          "question": "In an exam, 60% of the students passed in Math and 70% passed in Science. If 40% passed in both subjects, what percent of students failed in both subjects?",
+          "options": ["10%", "20%", "30%", "40%"],
+          "answer": "10%"
+        }
+      ]
+    },
+    {
+      "name": "Profit and Loss",
+      "questions": [
+        {
+          "id": "QPL01",
+          "question": "A shopkeeper sold an article at 20% profit. Had it been sold for Rs. 100 more, the profit would have been 30%. What is the cost price of the article?",
+          "options": ["Rs. 800", "Rs. 900", "Rs. 1000", "Rs. 1100"],
+          "answer": "Rs. 1000"
+        },
+        {
+          "id": "QPL02",
+          "question": "A man buys an article for Rs. 540 and sells it at a loss of 10%. What is the selling price?",
+          "options": ["Rs. 486", "Rs. 496", "Rs. 506", "Rs. 594"],
+          "answer": "Rs. 486"
+        },
+        {
+          "id": "QPL03",
+          "question": "By selling a watch for Rs. 1140, a shopkeeper makes a profit of 14%. At what price should he sell it to make a profit of 20%?",
+          "options": ["Rs. 1180", "Rs. 1200", "Rs. 1210", "Rs. 1220"],
+          "answer": "Rs. 1200"
+        },
+        {
+          "id": "QPL04",
+          "question": "A trader bought 10 kg of sugar at Rs. 38 per kg. He sold 3 kg at 20% profit, 5 kg at 15% profit. At what price per kg should he sell the remaining quantity to make an overall profit of 15%?",
+          "options": ["Rs. 41.8", "Rs. 42.9", "Rs. 43.7", "Rs. 45.6"],
+          "answer": "Rs. 41.8"
+        },
+        {
+          "id": "QPL05",
+          "question": "If the cost price of 12 items is equal to the selling price of 10 items, what is the profit percentage?",
+          "options": ["15%", "20%", "25%", "30%"],
+          "answer": "20%"
+        },
+        {
+          "id": "QPL06",
+          "question": "A shopkeeper purchased a watch for Rs. 450 and sold it for Rs. 495. What is his profit percentage?",
+          "options": ["8%", "9%", "10%", "11%"],
+          "answer": "10%"
+        },
+        {
+          "id": "QPL07",
+          "question": "A shopkeeper sells an article at a gain of 25%. If he had bought it at 10% less and sold it for Rs. 6 less, he would have gained 30%. What is the cost price of the article?",
+          "options": ["Rs. 40", "Rs. 60", "Rs. 80", "Rs. 120"],
+          "answer": "Rs. 60"
+        },
+        {
+          "id": "QPL08",
+          "question": "A man sold two articles at the same price. On one he gains 10% and on the other he loses 10%. Find his loss or gain percent in the whole transaction.",
+          "options": ["0% (No loss no gain)", "1% loss", "1% gain", "2% loss"],
+          "answer": "1% loss"
+        },
+        {
+          "id": "QPL09",
+          "question": "If a shopkeeper offers a discount of 10% on the marked price of an article but still makes a profit of 8%, what is the actual profit percent if he sells it at the marked price?",
+          "options": ["18%", "20%", "30%", "38%"],
+          "answer": "20%"
+        },
+        {
+          "id": "QPL10",
+          "question": "A merchant buys two articles for Rs. 500 each. He sells one at a profit of 10% and the other at a loss of 10%. What is his total profit or loss?",
+          "options": ["No profit, no loss", "Loss of Rs. 10", "Profit of Rs. 10", "Loss of Rs. 5"],
+          "answer": "No profit, no loss"
+        }
+      ]
+    },
+    {
+      "name": "Simple and Compound Interest",
+      "questions": [
+        {
+          "id": "QSI01",
+          "question": "What is the simple interest on Rs. 5000 at 8% per annum for 2 years?",
+          "options": ["Rs. 700", "Rs. 800", "Rs. 900", "Rs. 1000"],
+          "answer": "Rs. 800"
+        },
+        {
+          "id": "QSI02",
+          "question": "A sum of money doubles itself in 8 years at simple interest. What is the rate of interest?",
+          "options": ["10%", "12%", "12.5%", "15%"],
+          "answer": "12.5%"
+        },
+        {
+          "id": "QSI03",
+          "question": "The compound interest on Rs. 8000 at 15% per annum for 2 years compounded annually is:",
+          "options": ["Rs. 2400", "Rs. 2500", "Rs. 2520", "Rs. 2700"],
+          "answer": "Rs. 2520"
+        },
+        {
+          "id": "QSI04",
+          "question": "At what rate percent per annum will a sum of money double in 12 years under simple interest?",
+          "options": ["7%", "8%", "8.33%", "9%"],
+          "answer": "8.33%"
+        },
+        {
+          "id": "QSI05",
+          "question": "The difference between compound interest and simple interest on Rs. 5000 for 2 years at 8% per annum is:",
+          "options": ["Rs. 30", "Rs. 32", "Rs. 36", "Rs. 40"],
+          "answer": "Rs. 32"
+        },
+        {
+          "id": "QSI06",
+          "question": "A sum of money invested at compound interest amounts to Rs. 4800 after 2 years and to Rs. 5760 after 3 years. The sum is:",
+          "options": ["Rs. 3600", "Rs. 3840", "Rs. 4000", "Rs. 4200"],
+          "answer": "Rs. 4000"
+        },
+        {
+          "id": "QSI07",
+          "question": "In how many years will a sum of money triple itself at 12% per annum simple interest?",
+          "options": ["12.5 years", "15 years", "16.66 years", "20 years"],
+          "answer": "16.66 years"
+        },
+        {
+          "id": "QSI08",
+          "question": "The effective annual rate of interest corresponding to a nominal rate of 8% per annum compounded quarterly is:",
+          "options": ["8.16%", "8.24%", "8.32%", "8.4%"],
+          "answer": "8.24%"
+        },
+        {
+          "id": "QSI09",
+          "question": "A sum of money lent at simple interest amounts to Rs. 1680 in 2 years and Rs. 1800 in 3 years. The principal is:",
+          "options": ["Rs. 1200", "Rs. 1400", "Rs. 1440", "Rs. 1500"],
+          "answer": "Rs. 1440"
+        },
+        {
+          "id": "QSI10",
+          "question": "At what rate of compound interest per annum will a sum of Rs. 1200 become Rs. 1323 in 2 years?",
+          "options": ["5%", "10%", "20%", "25%"],
+          "answer": "5%"
+        }
+      ]
+    },
+    {
+      "name": "Ratio and Proportion",
+      "questions": [
+        {
+          "id": "QRP01",
+          "question": "If A:B = 3:4 and B:C = 5:6, what is A:C?",
+          "options": ["15:24", "3:6", "5:8", "5:6"],
+          "answer": "15:24"
+        },
+        {
+          "id": "QRP02",
+          "question": "The ratio of boys to girls in a class is 7:5. If 4 more girls join the class, the ratio becomes 7:6. How many students were initially in the class?",
+          "options": ["36", "48", "60", "72"],
+          "answer": "60"
+        },
+        {
+          "id": "QRP03",
+          "question": "Divide Rs. 1170 among A, B and C in the ratio 5:6:9.",
+          "options": ["A: Rs. 350, B: Rs. 420, C: Rs. 400", "A: Rs. 300, B: Rs. 360, C: Rs. 510", "A: Rs. 250, B: Rs. 300, C: Rs. 620", "A: Rs. 325, B: Rs. 390, C: Rs. 455"],
+          "answer": "A: Rs. 250, B: Rs. 300, C: Rs. 620"
+        },
+        {
+          "id": "QRP04",
+          "question": "If 5:6 = 20:x, then x equals:",
+          "options": ["20", "24", "25", "30"],
+          "answer": "24"
+        },
+        {
+          "id": "QRP05",
+          "question": "If the ratio of the present ages of A and B is 3:5 and after 8 years it will be 5:7, what is the present age of A?",
+          "options": ["12 years", "16 years", "24 years", "32 years"],
+          "answer": "24 years"
+        },
+        {
+          "id": "QRP06",
+          "question": "Two numbers are in the ratio 3:4. If 6 is added to both, they are in the ratio 5:6. The numbers are:",
+          "options": ["6 and 8", "9 and 12", "12 and 16", "15 and 20"],
+          "answer": "12 and 16"
+        },
+        {
+          "id": "QRP07",
+          "question": "The fourth proportional to 6, 12 and 8 is:",
+          "options": ["14", "16", "18", "24"],
+          "answer": "16"
+        },
+        {
+          "id": "QRP08",
+          "question": "In a school, the ratio of the number of boys to the number of girls is 8:5. If there are 160 boys, how many students are there in the school?",
+          "options": ["250", "260", "265", "270"],
+          "answer": "260"
+        },
+        {
+          "id": "QRP09",
+          "question": "The ratio of incomes of A and B is 5:3 and the ratio of their expenditures is 9:5. If A saves 1/5 of his income, then B saves:",
+          "options": ["1/5 of his income", "1/4 of his income", "1/3 of his income", "2/5 of his income"],
+          "answer": "1/5 of his income"
+        },
+        {
+          "id": "QRP10",
+          "question": "If 3:x = 5:25, then the value of x is:",
+          "options": ["15", "30", "45", "60"],
+          "answer": "15"
+        }
+      ]
+    },
+    {
+      "name": "Mixtures and Alligations",
+      "questions": [
+        {
+          "id": "QMA01",
+          "question": "A mixture contains milk and water in the ratio 5:3. If 4 liters of water is added to the mixture, the ratio becomes 5:4. Find the initial quantity of milk in the mixture.",
+          "options": ["15 liters", "20 liters", "25 liters", "30 liters"],
+          "answer": "20 liters"
+        },
+        {
+          "id": "QMA02",
+          "question": "In what ratio must a 20% alcohol solution be mixed with a 50% alcohol solution to get a 40% alcohol solution?",
+          "options": ["1:2", "1:3", "2:3", "3:2"],
+          "answer": "1:2"
+        },
+        {
+          "id": "QMA03",
+          "question": "Tea worth Rs. 126 per kg and Rs. 135 per kg are mixed with a third variety of tea in the ratio 1:1:2. If the mixture is worth Rs. 153 per kg, what is the price of the third variety per kg?",
+          "options": ["Rs. 165", "Rs. 170", "Rs. 175.5", "Rs. 180"],
+          "answer": "Rs. 175.5"
+        },
+        {
+          "id": "QMA04",
+          "question": "A vessel contains 40 liters of milk. 8 liters of milk is removed and replaced with water. If this process is repeated once more, how much milk is left in the vessel?",
+          "options": ["25.6 liters", "26.4 liters", "28.8 liters", "30.2 liters"],
+          "answer": "25.6 liters"
+        },
+        {
+          "id": "QMA05",
+          "question": "A jar contains a mixture of two liquids A and B in the ratio 4:1. When 10 liters of the mixture is removed and 10 liters of liquid B is added, the ratio becomes 2:3. How many liters of liquid A was in the jar initially?",
+          "options": ["16 liters", "20 liters", "24 liters", "30 liters"],
+          "answer": "16 liters"
+        },
+        {
+          "id": "QMA06",
+          "question": "How much water should be added to 30 liters of a 60% alcohol solution to reduce it to a 40% solution?",
+          "options": ["15 liters", "20 liters", "25 liters", "45 liters"],
+          "answer": "15 liters"
+        },
+        {
+          "id": "QMA07",
+          "question": "A 25% alcohol solution is mixed with a 50% alcohol solution. What must be the ratio of the first to the second solution so that the resultant solution has 40% alcohol?",
+          "options": ["1:3", "2:3", "1:1", "2:1"],
+          "answer": "2:3"
+        },
+        {
+          "id": "QMA08",
+          "question": "A vessel contains a mixture of milk and water in the ratio 7:3. If 10 liters of the mixture is replaced with 10 liters of water, the ratio of milk to water becomes 7:5. What is the initial quantity of the mixture?",
+          "options": ["40 liters", "50 liters", "70 liters", "100 liters"],
+          "answer": "50 liters"
+        },
+        {
+          "id": "QMA09",
+          "question": "In what ratio must water be mixed with milk to get a mixture containing 75% milk?",
+          "options": ["1:1", "1:2", "1:3", "1:4"],
+          "answer": "1:3"
+        },
+        {
+          "id": "QMA10",
+          "question": "Gold is 19 times as heavy as water and copper is 9 times as heavy as water. In what ratio should these metals be mixed to get an alloy 15 times as heavy as water?",
+          "options": ["2:1", "3:2", "1:1", "3:1"],
+          "answer": "3:2"
+        }
+      ]
+    },
+    {
+      "name": "Time, Speed and Distance",
+      "questions": [
+        {
+          "id": "QTSD01",
+          "question": "A train 240 m long passes a pole in 12 seconds. What is the speed of the train in km/hr?",
+          "options": ["60", "68", "72", "78"],
+          "answer": "72"
+        },
+        {
+          "id": "QTSD02",
+          "question": "A car travels a distance of 480 km at a uniform speed. If the speed of the car is increased by 4 km/hr, the time taken for the journey decreases by 1 hour. What is the original speed of the car?",
+          "options": ["28 km/hr", "32 km/hr", "40 km/hr", "48 km/hr"],
+          "answer": "32 km/hr"
+        },
+        {
+          "id": "QTSD03",
+          "question": "Two trains of equal length 300 m each are running on parallel tracks in opposite directions with speeds of 72 km/hr and 54 km/hr respectively. How long will they take to cross each other completely?",
+          "options": ["12 seconds", "15 seconds", "18 seconds", "21 seconds"],
+          "answer": "15 seconds"
+        },
+        {
+          "id": "QTSD04",
+          "question": "A person covers a certain distance at 10 km/hr and returns at 15 km/hr. What is the average speed for the entire journey?",
+          "options": ["12 km/hr", "12.5 km/hr", "13 km/hr", "14 km/hr"],
+          "answer": "12 km/hr"
+        },
+        {
+          "id": "QTSD05",
+          "question": "A man can row 6 km/hr in still water. If the river is flowing at 2 km/hr, then the time taken to row 12 km upstream is:",
+          "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+          "answer": "3 hours"
+        },
+        {
+          "id": "QTSD06",
+          "question": "A train 150 m long crosses a platform 250 m long in 20 seconds. What is the speed of the train in km/hr?",
+          "options": ["60", "68", "72", "78"],
+          "answer": "72"
+        },
+        {
+          "id": "QTSD07",
+          "question": "Walking at 3/4th of his usual speed, a man reaches his office 15 minutes late. What is his usual time to reach the office?",
+          "options": ["35 minutes", "40 minutes", "45 minutes", "60 minutes"],
+          "answer": "45 minutes"
+        },
+        {
+          "id": "QTSD08",
+          "question": "Two trains start from stations A and B and travel towards each other at speeds of 50 km/hr and 60 km/hr respectively. At the time of meeting, the second train has traveled 60 km more than the first. The distance between A and B is:",
+          "options": ["660 km", "720 km", "770 km", "880 km"],
+          "answer": "770 km"
+        },
+        {
+          "id": "QTSD09",
+          "question": "A man covers 1/3 of a journey at 10 km/hr, 1/2 of the journey at 20 km/hr and the rest at 60 km/hr. What is his average speed for the entire journey?",
+          "options": ["18 km/hr", "21 km/hr", "24 km/hr", "30 km/hr"],
+          "answer": "18 km/hr"
+        },
+        {
+          "id": "QTSD10",
+          "question": "A train 100 m long takes 10 seconds to cross a platform 200 m long. What is the speed of the train in km/hr?",
+          "options": ["90", "100", "108", "120"],
+          "answer": "108"
+        }
+      ]
+    },
+    {
+      "name": "Time and Work",
+      "questions": [
+        {
+          "id": "QTW01",
+          "question": "A can complete a task in 10 days, B in 15 days. How long will they take together?",
+          "options": ["5 days", "6 days", "7.5 days", "8 days"],
+          "answer": "6 days"
+        },
+        {
+          "id": "QTW02",
+          "question": "If A is twice as fast as B and together they finish a work in 12 days, how long would A take alone?",
+          "options": ["18", "12", "8", "24"],
+          "answer": "18"
+        },
+        {
+          "id": "QTW03",
+          "question": "A and B can do a work in 15 days, B and C in 12 days, C and A in 10 days. How long will A take to do the work alone?",
+          "options": ["20 days", "24 days", "30 days", "40 days"],
+          "answer": "20 days"
+        },
+        {
+          "id": "QTW04",
+          "question": "X and Y together can complete a piece of work in 12 days. If X alone can complete the same work in 20 days, how long will Y take to complete the work alone?",
+          "options": ["24 days", "30 days", "36 days", "40 days"],
+          "answer": "30 days"
+        },
+        {
+          "id": "QTW05",
+          "question": "12 men complete a work in 10 days. After they have worked for 4 days, 6 more men join them. How many more days will they take to complete the remaining work?",
+          "options": ["3", "4", "5", "6"],
+          "answer": "3"
+        },
+        {
+          "id": "QTW06",
+          "question": "A can finish a work in 18 days and B can do the same work in 15 days. B worked for 10 days and left the job. In how many days will A finish the remaining work?",
+          "options": ["5", "6", "8", "10"],
+          "answer": "6"
+        },
+        {
+          "id": "QTW07",
+          "question": "A can complete a work in 12 days working 8 hours a day. B can complete the same work in 8 days working 10 hours a day. If A and B work together 8 hours a day, in how many days can they complete the work?",
+          "options": ["4", "4.8", "5", "6"],
+          "answer": "4.8"
+        },
+        {
+          "id": "QTW08",
+          "question": "Two pipes A and B can fill a tank in 24 minutes and 32 minutes respectively. If both pipes are opened simultaneously, after how much time should B be closed so that the tank is full in 18 minutes?",
+          "options": ["8 minutes", "10 minutes", "12 minutes", "14 minutes"],
+          "answer": "8 minutes"
+        },
+        {
+          "id": "QTW09",
+          "question": "A tap can fill a tank in 6 hours. After half the tank is filled, three more similar taps are opened. What is the total time taken to fill the tank completely?",
+          "options": ["3 hours 45 minutes", "4 hours", "4 hours 15 minutes", "4 hours 30 minutes"],
+          "answer": "3 hours 45 minutes"
+        },
+        {
+          "id": "QTW10",
+          "question": "P and Q together can complete a work in 12 days. P alone can complete it in 20 days. If Q does the work for 5 days and then P joins, in how many more days will the work be completed?",
+          "options": ["6", "7", "8", "9"],
+          "answer": "8"
+        }
+      ]
+    },
+    {
+      "name": "Equations (Linear & Quadratic)",
+      "questions": [
+        {
+          "id": "QEQ01",
+          "question": "If 3x + 4y = 12 and 5x - 2y = 14, what is the value of x + y?",
+          "options": ["2", "3", "4", "5"],
+          "answer": "4"
+        },
+        {
+          "id": "QEQ02",
+          "question": "The roots of the quadratic equation x² - 7x + 12 = 0 are:",
+          "options": ["3, 4", "4, 3", "4, -3", "3, -4"],
+          "answer": "3, 4"
+        },
+        {
+          "id": "QEQ03",
+          "question": "If x = 3 is one root of the quadratic equation x² - 5x + k = 0, what is the value of k?",
+          "options": ["6", "9", "12", "15"],
+          "answer": "6"
+        },
+        {
+          "id": "QEQ04",
+          "question": "The sum of the roots of the equation 2x² - 5x + 2 = 0 is:",
+          "options": ["2", "2.5", "5/2", "5/4"],
+          "answer": "5/2"
+        },
+        {
+          "id": "QEQ05",
+          "question": "If 2x + 3y = 12 and 3x + 4y = 17, what is the value of y?",
+          "options": ["1", "2", "3", "4"],
+          "answer": "2"
+        },
+        {
+          "id": "QEQ06",
+          "question": "The quadratic equation whose roots are 3 and -2 is:",
+          "options": ["x² - x - 6 = 0", "x² + x - 6 = 0", "x² - x + 6 = 0", "x² + x + 6 = 0"],
+          "answer": "x² - x - 6 = 0"
+        },
+        {
+          "id": "QEQ07",
+          "question": "For what value of k will the following system of equations have infinitely many solutions? 2x + 3y = 7, 6x + ky = 21",
+          "options": ["7", "8", "9", "10"],
+          "answer": "9"
+        },
+        {
+          "id": "QEQ08",
+          "question": "If a and b are the roots of the equation x² - 6x + k = 0 and a + b = 6, what is the value of k?",
+          "options": ["7", "8", "9", "10"],
+          "answer": "9"
+        },
+        {
+          "id": "QEQ09",
+          "question": "The equation 3x² + 2x - 4 = 0 has:",
+          "options": ["No real roots", "One real root", "Two equal real roots", "Two different real roots"],
+          "answer": "Two different real roots"
+        },
+        {
+          "id": "QEQ10",
+          "question": "If the roots of ax² + bx + c = 0 are reciprocals of each other, then:",
+          "options": ["a = c", "a + c = 0", "a - c = 0", "a + b + c = 0"],
+          "answer": "a = c"
+        }
+      ]
+    },
+    {
+      "name": "Algebra (Basics)",
+      "questions": [
+        {
+          "id": "QAL01",
+          "question": "If a + b = 5 and ab = 6, what is the value of a² + b²?",
+          "options": ["13", "23", "25", "49"],
+          "answer": "13"
+        },
+        {
+          "id": "QAL02",
+          "question": "The value of (a + b)³ - (a - b)³ is:",
+          "options": ["2a³ + 6ab²", "6a²b + 2b³", "6ab(a + b)", "6ab"],
+          "answer": "6ab(a + b)"
+        },
+        {
+          "id": "QAL03",
+          "question": "If x² + y² = 25 and xy = 12, what is the value of (x + y)²?",
+          "options": ["37", "41", "49", "51"],
+          "answer": "49"
+        },
+        {
+          "id": "QAL04",
+          "question": "If a + b + c = 9 and a² + b² + c² = 29, what is the value of ab + bc + ca?",
+          "options": ["18", "20", "22", "24"],
+          "answer": "22"
+        },
+        {
+          "id": "QAL05",
+          "question": "The factorization of x² - 2x - 8 is:",
+          "options": ["(x - 4)(x + 2)", "(x + 4)(x - 2)", "(x - 4)(x - 2)", "(x + 4)(x + 2)"],
+          "answer": "(x - 4)(x + 2)"
+        },
+        {
+          "id": "QAL06",
+          "question": "If p + q + r = 6 and pq + qr + rp = 11, what is the value of p² + q² + r²?",
+          "options": ["12", "14", "16", "36"],
+          "answer": "14"
+        },
+        {
+          "id": "QAL07",
+          "question": "The value of (2a² + 2b²) - (a + b)² is:",
+          "options": ["(a - b)²", "a² - b²", "2(a - b)²", "a² + b²"],
+          "answer": "(a - b)²"
+        },
+        {
+          "id": "QAL08",
+          "question": "If a³ + b³ = 9 and a + b = 3, what is the value of ab?",
+          "options": ["1", "2", "3", "4"],
+          "answer": "2"
+        },
+        {
+          "id": "QAL09",
+          "question": "Simplify: (x + y)/(x - y) + (x - y)/(x + y)",
+          "options": ["0", "1", "2", "2x²/(x² - y²)"],
+          "answer": "2x²/(x² - y²)"
+        },
+        {
+          "id": "QAL10",
+          "question": "If 2ˣ = 32, what is the value of x?",
+          "options": ["4", "5", "6", "8"],
+          "answer": "5"
+        }
+      ]
+    },
+    {
+      "name": "Geometry (Basics – Lines, Angles, Triangles)",
+      "questions": [
+        {
+          "id": "QGE01",
+          "question": "If two angles of a triangle are 45° and 60°, what is the third angle?",
+          "options": ["55°", "65°", "75°", "85°"],
+          "answer": "75°"
+        },
+        {
+          "id": "QGE02",
+          "question": "In a right-angled triangle, if one angle is 30°, what is the other acute angle?",
+          "options": ["30°", "45°", "60°", "90°"],
+          "answer": "60°"
+        },
+        {
+          "id": "QGE03",
+          "question": "The sum of the exterior angles of a polygon with n sides is:",
+          "options": ["(n-2) × 180°", "(2n-4) × 90°", "360°", "(n+2) × 180°"],
+          "answer": "360°"
+        },
+        {
+          "id": "QGE04",
+          "question": "In an isosceles triangle, if the equal sides are 10 cm each and the third side is 16 cm, what is the area of the triangle?",
+          "options": ["48 cm²", "54 cm²", "60 cm²", "96 cm²"],
+          "answer": "48 cm²"
+        },
+        {
+          "id": "QGE05",
+          "question": "If the sides of a triangle are in the ratio 3:4:5, and its perimeter is 48 cm, what is the length of the smallest side?",
+          "options": ["8 cm", "10 cm", "12 cm", "16 cm"],
+          "answer": "12 cm"
+        },
+        {
+          "id": "QGE06",
+          "question": "The angles in a triangle are in the ratio 2:3:5. What is the largest angle?",
+          "options": ["90°", "100°", "108°", "120°"],
+          "answer": "90°"
+        },
+        {
+          "id": "QGE07",
+          "question": "Two parallel lines are cut by a transversal. The sum of two consecutive interior angles is:",
+          "options": ["90°", "180°", "270°", "360°"],
+          "answer": "180°"
+        },
+        {
+          "id": "QGE08",
+          "question": "The sides of a triangle are 7 cm, 24 cm and 25 cm. What type of triangle is it?",
+          "options": ["Equilateral", "Isosceles", "Scalene", "Right-angled"],
+          "answer": "Right-angled"
+        },
+        {
+          "id": "QGE09",
+          "question": "The area of a triangle with vertices at (1, 1), (4, 5) and (7, 2) is:",
+          "options": ["11.5 square units", "12 square units", "13.5 square units", "15 square units"],
+          "answer": "13.5 square units"
+        },
+        {
+          "id": "QGE10",
+          "question": "A regular polygon has 10 sides. What is the measure of each interior angle?",
+          "options": ["108°", "135°", "144°", "156°"],
+          "answer": "144°"
+        }
+      ]
+    },
+    {
+      "name": "Mensuration (2D & 3D)",
+      "questions": [
+        {
+          "id": "QME01",
+          "question": "The area of a square is 196 cm². What is its perimeter?",
+          "options": ["48 cm", "52 cm", "56 cm", "64 cm"],
+          "answer": "56 cm"
+        },
+        {
+          "id": "QME02",
+          "question": "The volume of a cone with radius 7 cm and height 15 cm is:",
+          "options": ["220 cm³", "385 cm³", "770 cm³", "1155 cm³"],
+          "answer": "770 cm³"
+        },
+        {
+          "id": "QME03",
+          "question": "The perimeter of a rectangle is 60 cm and its area is 200 cm². What is the length of the diagonal?",
+          "options": ["20 cm", "25 cm", "30 cm", "35 cm"],
+          "answer": "25 cm"
+        },
+        {
+          "id": "QME04",
+          "question": "The area of a trapezium with parallel sides 25 cm and 13 cm and height 8 cm is:",
+          "options": ["152 cm²", "172 cm²", "304 cm²", "456 cm²"],
+          "answer": "152 cm²"
+        },
+        {
+          "id": "QME05",
+          "question": "The radius of a cylinder is doubled and its height is halved. The ratio of the volume of the new cylinder to that of the original is:",
+          "options": ["1:1", "2:1", "4:1", "1:2"],
+          "answer": "2:1"
+        },
+        {
+          "id": "QME06",
+          "question": "The total surface area of a cube is 600 cm². What is its volume?",
+          "options": ["1000 cm³", "900 cm³", "1250 cm³", "1000√6 cm³"],
+          "answer": "1000 cm³"
+        },
+        {
+          "id": "QME07",
+          "question": "The area of an equilateral triangle with side 10 cm is:",
+          "options": ["25 cm²", "25√3 cm²", "50 cm²", "50√3 cm²"],
+          "answer": "25√3 cm²"
+        },
+        {
+          "id": "QME08",
+          "question": "The ratio of the volumes of a sphere and a cube having the same surface area is:",
+          "options": ["π:3", "π:6", "6:π", "√6:π"],
+          "answer": "π:6"
+        },
+        {
+          "id": "QME09",
+          "question": "The length, breadth and height of a cuboid are in the ratio 3:2:1. If its volume is 48 cm³, what is its total surface area?",
+          "options": ["58 cm²", "64 cm²", "76 cm²", "88 cm²"],
+          "answer": "76 cm²"
+        },
+        {
+          "id": "QME10",
+          "question": "The area of the largest circle that can be inscribed in a square of side 10 cm is:",
+          "options": ["25π cm²", "50π cm²", "75π cm²", "100π cm²"],
+          "answer": "25π cm²"
+        }
+      ]
+    },
+    {
+      "name": "Permutations and Combinations",
+      "questions": [
+        {
+          "id": "QPC01",
+          "question": "In how many ways can 5 books be arranged on a shelf?",
+          "options": ["24", "60", "120", "720"],
+          "answer": "120"
+        },
+        {
+          "id": "QPC02",
+          "question": "How many 4-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?",
+          "options": ["120", "240", "480", "720"],
+          "answer": "120"
+        },
+        {
+          "id": "QPC03",
+          "question": "From a group of 7 men and 4 women, in how many ways can a committee of 3 men and 2 women be formed?",
+          "options": ["35", "210", "350", "840"],
+          "answer": "210"
+        },
+        {
+          "id": "QPC04",
+          "question": "How many different words can be formed using all the letters of the word 'EQUATION' so that vowels always come together?",
+          "options": ["4320", "7200", "8640", "10080"],
+          "answer": "4320"
+        },
+        {
+          "id": "QPC05",
+          "question": "In how many ways can 6 people be seated around a circular table?",
+          "options": ["120", "240", "360", "720"],
+          "answer": "120"
+        },
+        {
+          "id": "QPC06",
+          "question": "How many 5-letter words can be formed using the letters of the word 'DELHI' without repetition?",
+          "options": ["60", "120", "360", "720"],
+          "answer": "120"
+        },
+        {
+          "id": "QPC07",
+          "question": "In how many ways can 5 different toys be distributed among 3 children?",
+          "options": ["30", "81", "243", "125"],
+          "answer": "243"
+        },
+        {
+          "id": "QPC08",
+          "question": "How many diagonals does a polygon with 10 sides have?",
+          "options": ["30", "35", "40", "45"],
+          "answer": "35"
+        },
+        {
+          "id": "QPC09",
+          "question": "In how many ways can the letters of the word 'ARRANGE' be arranged such that the two R's are never together?",
+          "options": ["180", "720", "900", "1800"],
+          "answer": "900"
+        },
+        {
+          "id": "QPC10",
+          "question": "From a standard deck of 52 cards, in how many ways can 5 cards be drawn?",
+          "options": ["52C5", "5! × 52C5", "52P5", "52^5"],
+          "answer": "52C5"
+        }
+      ]
+    },
+    {
+      "name": "Probability",
+      "questions": [
+        {
+          "id": "QPR01",
+          "question": "A box contains 5 red balls and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+          "options": ["5/28", "10/28", "15/28", "25/56"],
+          "answer": "10/28"
+        },
+        {
+          "id": "QPR02",
+          "question": "A die is rolled twice. What is the probability of getting a sum of 7?",
+          "options": ["1/6", "1/4", "5/36", "1/12"],
+          "answer": "1/6"
+        },
+        {
+          "id": "QPR03",
+          "question": "From a standard deck of 52 cards, what is the probability of drawing a king or a heart?",
+          "options": ["4/13", "16/52", "17/52", "18/52"],
+          "answer": "16/52"
+        },
+        {
+          "id": "QPR04",
+          "question": "Three different coins are tossed simultaneously. What is the probability of getting exactly two heads?",
+          "options": ["1/8", "1/4", "3/8", "1/2"],
+          "answer": "3/8"
+        },
+        {
+          "id": "QPR05",
+          "question": "In a box, there are 5 blue marbles, 8 red marbles, and 7 green marbles. If a marble is drawn at random, what is the probability that it is not red?",
+          "options": ["3/5", "12/20", "5/8", "3/4"],
+          "answer": "3/5"
+        },
+        {
+          "id": "QPR06",
+          "question": "Two dice are rolled. What is the probability that the sum is a prime number?",
+          "options": ["5/12", "1/3", "15/36", "1/2"],
+          "answer": "15/36"
+        },
+        {
+          "id": "QPR07",
+          "question": "A bag contains 4 white, 5 black and 6 red balls. If three balls are drawn at random, what is the probability that they are of different colors?",
+          "options": ["40/91", "90/455", "120/455", "24/91"],
+          "answer": "120/455"
+        },
+        {
+          "id": "QPR08",
+          "question": "A and B throw a die alternately. The first to throw a '6' wins. If A starts, what is the probability that A wins?",
+          "options": ["5/11", "6/11", "1/2", "7/12"],
+          "answer": "6/11"
+        },
+        {
+          "id": "QPR09",
+          "question": "In a class of 40 students, 25 students like mathematics, 20 like physics and 10 like both. A student is selected at random. What is the probability that the student likes neither mathematics nor physics?",
+          "options": ["1/8", "5/40", "5/8", "1/4"],
+          "answer": "1/8"
+        },
+        {
+          "id": "QPR10",
+          "question": "If P(A) = 0.6, P(B) = 0.7 and P(A ∩ B) = 0.4, what is P(A ∪ B)?",
+          "options": ["0.3", "0.7", "0.9", "1.3"],
+          "answer": "0.9"
+        }
+      ]
+    },
+    {
+      "name": "Progressions (AP/GP)",
+      "questions": [
+        {
+          "id": "QPG01",
+          "question": "Find the sum of the first 20 terms of the AP: 3, 7, 11, 15, ...",
+          "options": ["820", "830", "840", "850"],
+          "answer": "830"
+        },
+        {
+          "id": "QPG02",
+          "question": "The 6th term of a GP is 64 and the 3rd term is 8. What is the first term?",
+          "options": ["1", "2", "4", "8"],
+          "answer": "2"
+        },
+        {
+          "id": "QPG03",
+          "question": "How many terms of the AP: 9, 13, 17, ... must be taken to give a sum of 148?",
+          "options": ["6", "7", "8", "9"],
+          "answer": "8"
+        },
+        {
+          "id": "QPG04",
+          "question": "In a GP, the 3rd term is 9 and the 6th term is 729. What is the common ratio?",
+          "options": ["2", "3", "4", "9"],
+          "answer": "3"
+        },
+        {
+          "id": "QPG05",
+          "question": "Find the sum of n terms of the series 5 + 55 + 555 + ...",
+          "options": ["5(10^n - 1)/9", "5n(10^n - 1)/9", "5(10^n - 1)/81", "5(10^n - 1)"],
+          "answer": "5(10^n - 1)/9"
+        },
+        {
+          "id": "QPG06",
+          "question": "If the sum of first n terms of an AP is n², what is the first term?",
+          "options": ["0", "1", "2", "1/2"],
+          "answer": "1"
+        },
+        {
+          "id": "QPG07",
+          "question": "If the sum of infinite terms of a GP is 4 and the first term is 2, what is the common ratio?",
+          "options": ["1/2", "2/3", "1/3", "1/4"],
+          "answer": "1/2"
+        }
+      ]
+    }
+  ]
+}
+       

@@ -1,0 +1,160 @@
+/* Assessment styles */
+
+/* Question navigator styles */
+.question-navigator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.question-number:hover {
+    background-color: #e2e6ea;
+}
+
+.question-number.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.question-number.answered {
+    background-color: #d1e7dd;
+    border-color: #a3cfbb;
+    color: #0f5132;
+}
+
+.question-number.answered.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+/* Timer styles */
+.timer-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Camera container styles */
+.camera-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#camera-feed {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Proctor indicators */
+.proctor-indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.proctoring-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Dashboard styles */
+
+/* Category cards */
+.category-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Chapter list items */
+.chapter-item {
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.chapter-item:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* Practice options */
+.practice-option {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.practice-option:hover {
+    transform: translateY(-3px);
+}
+
+/* Assessment Results */
+.score-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.score-label {
+    color: #6c757d;
+}
+
+/* Topic performance */
+.topic-performance {
+    margin-bottom: 1rem;
+}
+
+.topic-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.topic-progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .timer-display {
+        font-size: 1.8rem;
+    }
+    
+    .question-number {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .camera-container {
+        margin-bottom: 1rem;
+    }
+}

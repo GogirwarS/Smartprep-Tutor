@@ -1,0 +1,599 @@
+{
+  "subject": "English Language",
+  "topics": [
+   
+        {
+          "name": "Word Usage",
+          "questions": [
+            {
+              "id": "WU01",
+              "question": "Choose the correct word usage in the sentence: 'The new policy will ____ to all employees, regardless of their position.'",
+              "options": ["apply", "imply", "comply", "reply"],
+              "answer": "apply"
+            },
+            {
+              "id": "WU02",
+              "question": "Choose the correct word usage in the sentence: 'The museum houses a ____ collection of Renaissance paintings.'",
+              "options": ["priceless", "worthless", "priced", "worthy"],
+              "answer": "priceless"
+            },
+            {
+              "id": "WU03",
+              "question": "Choose the correct word usage in the sentence: 'She tried to ____ her nervousness during the interview.'",
+              "options": ["excel", "expel", "conceal", "reveal"],
+              "answer": "conceal"
+            },
+            {
+              "id": "WU04",
+              "question": "Choose the correct word usage in the sentence: 'His comments were completely ____ to the discussion at hand.'",
+              "options": ["irrelevant", "irrevocable", "irregular", "irresponsible"],
+              "answer": "irrelevant"
+            },
+            {
+              "id": "WU05",
+              "question": "Choose the correct word usage in the sentence: 'The accident led to a ____ delay in the project completion.'",
+              "options": ["temporarily", "temporally", "temporal", "temporary"],
+              "answer": "temporary"
+            },
+            {
+              "id": "WU06",
+              "question": "Choose the correct word usage in the sentence: 'The company will ____ a new marketing strategy next month.'",
+              "options": ["adapt", "adopt", "adept", "adept at"],
+              "answer": "adopt"
+            },
+            {
+              "id": "WU07",
+              "question": "Choose the correct word usage in the sentence: 'The professor's ____ explanation helped clarify the complex theory.'",
+              "options": ["lucid", "lucrative", "ludicrous", "luminous"],
+              "answer": "lucid"
+            },
+            {
+              "id": "WU08",
+              "question": "Choose the correct word usage in the sentence: 'The mountain climbers had to ____ severe weather conditions during their expedition.'",
+              "options": ["endure", "induce", "ensure", "insure"],
+              "answer": "endure"
+            },
+            {
+              "id": "WU09",
+              "question": "Choose the correct word usage in the sentence: 'The government has implemented several measures to ____ economic growth.'",
+              "options": ["stumble", "stimulate", "stipulate", "strangle"],
+              "answer": "stimulate"
+            },
+            {
+              "id": "WU10",
+              "question": "Choose the correct word usage in the sentence: 'The patient showed remarkable ____ after the surgery.'",
+              "options": ["recovery", "discovery", "uncovery", "covering"],
+              "answer": "recovery"
+            }
+          ]
+        },
+        {
+          "name": "Grammar (Tenses, Prepositions, Articles)",
+          "questions": [
+            {
+              "id": "GR01",
+              "question": "Choose the correct form: 'If I ____ the lottery, I would buy a house by the beach.'",
+              "options": ["win", "won", "had won", "would win"],
+              "answer": "won"
+            },
+            {
+              "id": "GR02",
+              "question": "Choose the correct preposition: 'The book was written ____ Charles Dickens ____ the 19th century.'",
+              "options": ["by ... in", "with ... at", "from ... during", "of ... within"],
+              "answer": "by ... in"
+            },
+            {
+              "id": "GR03",
+              "question": "Choose the correct article: 'I saw ____ UFO in the sky last night.'",
+              "options": ["a", "an", "the", "no article needed"],
+              "answer": "a"
+            },
+            {
+              "id": "GR04",
+              "question": "Choose the correct tense: 'By the time you read this message, I ____ the country.'",
+              "options": ["will leave", "will have left", "have left", "am leaving"],
+              "answer": "will have left"
+            },
+            {
+              "id": "GR05",
+              "question": "Choose the correct preposition: 'The painting is hanging ____ the wall ____ the fireplace.'",
+              "options": ["on ... above", "at ... over", "by ... across", "in ... upon"],
+              "answer": "on ... above"
+            },
+            {
+              "id": "GR06",
+              "question": "Choose the correct article: 'She plays ____ piano beautifully.'",
+              "options": ["a", "an", "the", "no article needed"],
+              "answer": "the"
+            },
+            {
+              "id": "GR07",
+              "question": "Choose the correct tense: 'We ____ in this neighborhood since 2010.'",
+              "options": ["live", "are living", "have lived", "had lived"],
+              "answer": "have lived"
+            },
+            {
+              "id": "GR08",
+              "question": "Choose the correct preposition: 'The children were warned ____ playing ____ the busy road.'",
+              "options": ["against ... near", "from ... by", "about ... on", "of ... with"],
+              "answer": "against ... near"
+            },
+            {
+              "id": "GR09",
+              "question": "Choose the correct article: 'I'd like to become ____ engineer when I graduate.'",
+              "options": ["a", "an", "the", "no article needed"],
+              "answer": "an"
+            },
+            {
+              "id": "GR10",
+              "question": "Choose the correct tense: 'The train ____ by the time we reached the station.'",
+              "options": ["leaves", "left", "has left", "had left"],
+              "answer": "had left"
+            }
+          ]
+        },
+        {
+          "name": "Vocabulary (Contextual Meaning)",
+          "questions": [
+            {
+              "id": "VC01",
+              "question": "What is the meaning of 'engage' in the sentence: 'The company decided to engage an external consultant to review their procedures.'?",
+              "options": ["To marry someone", "To participate in something", "To hire or employ", "To fight with someone"],
+              "answer": "To hire or employ"
+            },
+            {
+              "id": "VC02",
+              "question": "What is the meaning of 'field' in the sentence: 'The journalist tried to field questions about the controversial report.'?",
+              "options": ["An area of land", "A subject or area of expertise", "To handle or respond to", "To participate in a sporting event"],
+              "answer": "To handle or respond to"
+            },
+            {
+              "id": "VC03",
+              "question": "What is the meaning of 'charge' in the sentence: 'The new manager is in charge of the department.'?",
+              "options": ["To ask for payment", "To rush forward", "To accuse of a crime", "Responsibility for"],
+              "answer": "Responsibility for"
+            },
+            {
+              "id": "VC04",
+              "question": "What is the meaning of 'run' in the sentence: 'The newspaper will run a story about the local elections tomorrow.'?",
+              "options": ["To move quickly on foot", "To operate or manage", "To publish or broadcast", "To compete in a race"],
+              "answer": "To publish or broadcast"
+            },
+            {
+              "id": "VC05",
+              "question": "What is the meaning of 'light' in the sentence: 'Recent discoveries have shed light on this previously misunderstood phenomenon.'?",
+              "options": ["Illumination from the sun or a lamp", "Something that makes things visible", "Understanding or clarification", "Not heavy"],
+              "answer": "Understanding or clarification"
+            },
+            {
+              "id": "VC06",
+              "question": "What is the meaning of 'table' in the sentence: 'The committee decided to table the discussion until next meeting.'?",
+              "options": ["A piece of furniture", "To present for consideration", "To postpone or delay", "To arrange data in rows and columns"],
+              "answer": "To postpone or delay"
+            },
+            {
+              "id": "VC07",
+              "question": "What is the meaning of 'stand' in the sentence: 'The old building still stands despite the earthquake.'?",
+              "options": ["To be on one's feet", "To remain upright", "To tolerate", "To be located"],
+              "answer": "To remain upright"
+            },
+            {
+              "id": "VC08",
+              "question": "What is the meaning of 'catch' in the sentence: 'I didn't catch what you said; could you repeat it?'?",
+              "options": ["To grab or seize", "To become infected", "To hear or understand", "To trap or ensnare"],
+              "answer": "To hear or understand"
+            },
+            {
+              "id": "VC09",
+              "question": "What is the meaning of 'play' in the sentence: 'Emotions play an important role in decision-making.'?",
+              "options": ["To engage in games", "To perform music", "To act in a drama", "To have influence or function"],
+              "answer": "To have influence or function"
+            },
+            {
+              "id": "VC10",
+              "question": "What is the meaning of 'draw' in the sentence: 'The fascinating exhibition continues to draw large crowds.'?",
+              "options": ["To create a picture", "To pull or drag", "To attract or entice", "To select randomly"],
+              "answer": "To attract or entice"
+            }
+          ]
+        },
+   
+    {
+      "name": "Reading Comprehension (Short passages)",
+      "questions": [
+        {
+          "id": "RC01",
+          "question": "Read the passage and answer the question: 'The Great Barrier Reef, the world's largest coral reef system, is facing unprecedented threats from climate change. Rising ocean temperatures have caused repeated mass coral bleaching events, while increased acidity from carbon dioxide absorption weakens coral structures. Scientists predict that without immediate intervention, over 90% of the reef could be lost by 2050.' What is the primary threat to the Great Barrier Reef mentioned in the passage?",
+          "options": ["Overfishing", "Tourism", "Climate change", "Oil drilling"],
+          "answer": "Climate change"
+        },
+        {
+          "id": "RC02",
+          "question": "Read the passage and answer the question: 'Democracy's strength lies not in the uniformity of opinion but in the diversity of voices. The marketplace of ideas thrives when citizens engage in respectful debate, challenge prevailing narratives, and consider perspectives different from their own. The greatest threat to this system is not disagreement but the unwillingness to acknowledge the possibility that one's own views may be incomplete or incorrect.' According to the passage, what is essential for democracy to function well?",
+          "options": ["Uniform opinions", "Diversity of voices", "Government control of information", "Limiting debate"],
+          "answer": "Diversity of voices"
+        },
+        {
+          "id": "RC03",
+          "question": "Read the passage and answer the question: 'The invention of the printing press in the 15th century by Johannes Gutenberg revolutionized the spread of information. Previously, books were painstakingly copied by hand, making them rare and expensive. The printing press enabled mass production of texts, dramatically reducing their cost and increasing accessibility. This technological innovation contributed significantly to the Renaissance, the Reformation, and the Scientific Revolution by allowing ideas to spread more quickly and widely than ever before.' According to the passage, what was a major impact of the printing press?",
+          "options": ["Reduced literacy rates", "Increased cost of books", "Faster and wider spread of ideas", "Decreased interest in reading"],
+          "answer": "Faster and wider spread of ideas"
+        },
+        {
+          "id": "RC04",
+          "question": "Read the passage and answer the question: 'Honeybees communicate through an elaborate dance language. When a worker bee discovers a rich food source, it returns to the hive and performs a waggle dance. The direction of the dance indicates the direction of the food source relative to the sun, while the duration of the waggling indicates the distance. Other bees observe this performance and can then locate the food source with remarkable precision.' What information does the duration of waggling in a honeybee's dance convey?",
+          "options": ["Type of food", "Quality of food", "Distance to food", "Time of day"],
+          "answer": "Distance to food"
+        },
+        {
+          "id": "RC05",
+          "question": "Read the passage and answer the question: 'Despite common perception, the Great Wall of China is not visible from space with the naked eye. This myth has persisted for decades, but astronauts have consistently reported that the wall is difficult to see even from low Earth orbit. The wall is relatively narrow and built from materials that blend with the surrounding landscape when viewed from a great distance. Many other human structures, such as highways and city lights, are actually more visible from space.' According to the passage, why is the Great Wall difficult to see from space?",
+          "options": ["It's too old", "It's not long enough", "It's narrow and blends with surroundings", "It's covered by clouds"],
+          "answer": "It's narrow and blends with surroundings"
+        },
+        {
+          "id": "RC06",
+          "question": "Read the passage and answer the question: 'Research suggests that bilingualism may delay the onset of dementia symptoms by approximately four to five years. The theory is that regularly switching between languages exercises the brain's executive function, building what scientists call 'cognitive reserve.' This doesn't prevent dementia pathology but appears to help the brain compensate for damage, allowing it to function normally for longer despite underlying disease progression.' According to the passage, how does bilingualism potentially benefit brain health?",
+          "options": ["It prevents dementia entirely", "It builds cognitive reserve", "It reverses existing brain damage", "It eliminates the need for medication"],
+          "answer": "It builds cognitive reserve"
+        },
+        {
+          "id": "RC07",
+          "question": "Read the passage and answer the question: 'The placebo effect is a remarkable phenomenon in which a patient's symptoms improve after receiving a treatment with no active medicinal ingredients, simply because the patient believes the treatment will work. Recent research suggests the placebo effect involves complex neurobiological mechanisms, including the release of endorphins—the body's natural painkillers. This highlights the powerful connection between mind and body in healing processes.' What does the passage suggest is responsible for the placebo effect?",
+          "options": ["Undiscovered medicinal properties", "Psychological deception", "The mind-body connection", "Doctor-patient relationships"],
+          "answer": "The mind-body connection"
+        },
+        {
+          "id": "RC08",
+          "question": "Read the passage and answer the question: 'Venice, Italy, has been slowly sinking into the lagoon it was built upon, a problem exacerbated by rising sea levels due to climate change. The city experiences regular flooding, known locally as 'acqua alta,' which has become more frequent and severe in recent decades. In 2019, Venice implemented a flood barrier system called MOSE, consisting of 78 mobile gates that can temporarily separate the lagoon from the Adriatic Sea during high tides.' What is the main issue facing Venice described in this passage?",
+          "options": ["Tourism overcrowding", "Structural decay", "Economic decline", "Sinking and flooding"],
+          "answer": "Sinking and flooding"
+        },
+        {
+          "id": "RC09",
+          "question": "Read the passage and answer the question: 'Contrary to popular belief, the primary purpose of yawning may not be to increase oxygen intake. Research has found that people don't yawn more in low-oxygen environments, and exercise, which increases oxygen needs, doesn't trigger yawning. Instead, some scientists believe that yawning helps cool the brain by increasing blood flow and air intake. This cooling may help maintain optimal brain functioning, particularly when we're tired or transitioning between different states of alertness.' According to the passage, what might be the main purpose of yawning?",
+          "options": ["Social signaling", "Increasing oxygen", "Brain cooling", "Muscle stretching"],
+          "answer": "Brain cooling"
+        },
+        {
+          "id": "RC10",
+          "question": "Read the passage and answer the question: 'The 'farm-to-table' movement emphasizes locally grown produce and direct relationships between farmers and consumers. Proponents argue that this approach offers numerous benefits: fresher, more nutritious food; reduced environmental impact due to shorter transportation distances; support for local economies; and greater transparency in food production. Critics, however, point out that local isn't always more sustainable, as farming methods matter more than distance traveled, and that such systems may not scale efficiently to feed large urban populations.' What is one benefit of the farm-to-table movement mentioned in the passage?",
+          "options": ["Lower food prices", "Fresher food", "Increased crop yields", "Longer shelf life"],
+          "answer": "Fresher food"
+        }
+      ]
+    },
+    {
+      "name": "Synonyms & Antonyms",
+      "questions": [
+        {
+          "id": "SA01",
+          "question": "Choose the synonym of 'Benevolent':",
+          "options": ["Malicious", "Charitable", "Hostile", "Indifferent"],
+          "answer": "Charitable"
+        },
+        {
+          "id": "SA02",
+          "question": "Choose the antonym of 'Frugal':",
+          "options": ["Economical", "Thrifty", "Extravagant", "Prudent"],
+          "answer": "Extravagant"
+        },
+        {
+          "id": "SA03",
+          "question": "Choose the synonym of 'Ephemeral':",
+          "options": ["Permanent", "Transient", "Enduring", "Stable"],
+          "answer": "Transient"
+        },
+        {
+          "id": "SA04",
+          "question": "Choose the antonym of 'Audacious':",
+          "options": ["Timid", "Bold", "Daring", "Brave"],
+          "answer": "Timid"
+        },
+        {
+          "id": "SA05",
+          "question": "Choose the synonym of 'Pernicious':",
+          "options": ["Beneficial", "Harmless", "Harmful", "Advantageous"],
+          "answer": "Harmful"
+        },
+        {
+          "id": "SA06",
+          "question": "Choose the antonym of 'Laconic':",
+          "options": ["Verbose", "Brief", "Concise", "Terse"],
+          "answer": "Verbose"
+        },
+        {
+          "id": "SA07",
+          "question": "Choose the synonym of 'Recalcitrant':",
+          "options": ["Obedient", "Compliant", "Stubborn", "Acquiescent"],
+          "answer": "Stubborn"
+        },
+        {
+          "id": "SA08",
+          "question": "Choose the antonym of 'Taciturn':",
+          "options": ["Silent", "Reserved", "Garrulous", "Quiet"],
+          "answer": "Garrulous"
+        },
+        {
+          "id": "SA09",
+          "question": "Choose the synonym of 'Ameliorate':",
+          "options": ["Worsen", "Improve", "Deteriorate", "Aggravate"],
+          "answer": "Improve"
+        },
+        {
+          "id": "SA10",
+          "question": "Choose the antonym of 'Venerate':",
+          "options": ["Respect", "Honor", "Despise", "Admire"],
+          "answer": "Despise"
+        }
+      ]
+    },
+    {
+      "name": "Sentence Completion",
+      "questions": [
+        {
+          "id": "SC01",
+          "question": "Despite her best efforts to remain __________, the news of her promotion brought a smile to her face.",
+          "options": ["animated", "stoic", "verbose", "empathetic"],
+          "answer": "stoic"
+        },
+        {
+          "id": "SC02",
+          "question": "The professor's lecture was so __________ that several students fell asleep during the presentation.",
+          "options": ["engaging", "stimulating", "tedious", "concise"],
+          "answer": "tedious"
+        },
+        {
+          "id": "SC03",
+          "question": "The mountain climber's __________ was evident as he prepared to scale the treacherous peak despite numerous warnings.",
+          "options": ["trepidation", "intrepidity", "hesitation", "diffidence"],
+          "answer": "intrepidity"
+        },
+        {
+          "id": "SC04",
+          "question": "The critic's __________ review of the play caused ticket sales to plummet almost immediately.",
+          "options": ["laudatory", "ambivalent", "favorable", "scathing"],
+          "answer": "scathing"
+        },
+        {
+          "id": "SC05",
+          "question": "After years of drought, the farmers welcomed the __________ rainfall that promised to revitalize their crops.",
+          "options": ["meager", "sparse", "copious", "insufficient"],
+          "answer": "copious"
+        },
+        {
+          "id": "SC06",
+          "question": "The CEO's __________ leadership style created an atmosphere of trust and collaboration within the company.",
+          "options": ["authoritarian", "capricious", "inclusive", "erratic"],
+          "answer": "inclusive"
+        },
+        {
+          "id": "SC07",
+          "question": "The historical novel was praised for its __________ attention to period details and authentic dialogue.",
+          "options": ["superficial", "meticulous", "cursory", "negligent"],
+          "answer": "meticulous"
+        },
+        {
+          "id": "SC08",
+          "question": "Despite the __________ evidence against him, the defendant maintained his innocence throughout the trial.",
+          "options": ["exonerating", "inconclusive", "compelling", "favorable"],
+          "answer": "compelling"
+        },
+        {
+          "id": "SC09",
+          "question": "The diplomat's __________ remarks at the conference helped ease tensions between the two rival nations.",
+          "options": ["inflammatory", "divisive", "conciliatory", "provocative"],
+          "answer": "conciliatory"
+        },
+        {
+          "id": "SC10",
+          "question": "The ancient text was written in such __________ language that even expert linguists struggled to translate it.",
+          "options": ["straightforward", "accessible", "lucid", "abstruse"],
+          "answer": "abstruse"
+        }
+      ]
+    },
+    {
+      "name": "Error Spotting / Sentence Correction",
+      "questions": [
+        {
+          "id": "ES01",
+          "question": "Identify the error in the sentence: 'Neither the students nor the teacher were able to solve the complex problem.'",
+          "options": ["Neither", "the students", "were able", "complex problem"],
+          "answer": "were able"
+        },
+        {
+          "id": "ES02",
+          "question": "Identify the error in the sentence: 'The committee have decided to postpone the meeting until next week.'",
+          "options": ["The committee", "have decided", "to postpone", "until next week"],
+          "answer": "have decided"
+        },
+        {
+          "id": "ES03",
+          "question": "Identify the error in the sentence: 'She is one of the only student who completed the assignment before the deadline.'",
+          "options": ["She is", "one of the only", "student who", "before the deadline"],
+          "answer": "student who"
+        },
+        {
+          "id": "ES04",
+          "question": "Identify the error in the sentence: 'The data shows that inflation has risen dramatically over the past six months.'",
+          "options": ["The data", "shows that", "has risen", "past six months"],
+          "answer": "shows that"
+        },
+        {
+          "id": "ES05",
+          "question": "Identify the error in the sentence: 'Everyone must bring their own lunch to the field trip.'",
+          "options": ["Everyone", "must bring", "their own lunch", "to the field trip"],
+          "answer": "their own lunch"
+        },
+        {
+          "id": "ES06",
+          "question": "Identify the error in the sentence: 'If I would have known about the party, I would have attended it.'",
+          "options": ["If I", "would have known", "would have attended", "it"],
+          "answer": "would have known"
+        },
+        {
+          "id": "ES07",
+          "question": "Identify the error in the sentence: 'Between you and I, this project might not be completed on time.'",
+          "options": ["Between", "you and I", "might not be", "on time"],
+          "answer": "you and I"
+        },
+        {
+          "id": "ES08",
+          "question": "Identify the error in the sentence: 'The reason why he left early was because he felt ill.'",
+          "options": ["The reason why", "he left", "was because", "he felt ill"],
+          "answer": "was because"
+        },
+        {
+          "id": "ES09",
+          "question": "Identify the error in the sentence: 'She returned back to her hometown after living abroad for ten years.'",
+          "options": ["She", "returned back", "to her hometown", "for ten years"],
+          "answer": "returned back"
+        },
+        {
+          "id": "ES10",
+          "question": "Identify the error in the sentence: 'The manager along with his team members are planning a strategy for the upcoming project.'",
+          "options": ["The manager", "along with", "his team members", "are planning"],
+          "answer": "are planning"
+        }
+      ]
+    },
+    {
+      "name": "Fill in the Blanks",
+      "questions": [
+        {
+          "id": "FB01",
+          "question": "The museum's latest exhibition features artifacts that __________ the cultural heritage of ancient civilizations.",
+          "options": ["denounce", "showcase", "contradict", "minimize"],
+          "answer": "showcase"
+        },
+        {
+          "id": "FB02",
+          "question": "The company's financial situation has __________ in recent months due to poor management decisions.",
+          "options": ["deteriorated", "flourished", "stabilized", "neutralized"],
+          "answer": "deteriorated"
+        },
+        {
+          "id": "FB03",
+          "question": "Scientists have __________ that this species of butterfly may become extinct within the next decade.",
+          "options": ["denounced", "predicted", "celebrated", "overlooked"],
+          "answer": "predicted"
+        },
+        {
+          "id": "FB04",
+          "question": "Despite the heavy rain, the hikers were __________ to reach the summit before nightfall.",
+          "options": ["reluctant", "determined", "hesitant", "forbidden"],
+          "answer": "determined"
+        },
+        {
+          "id": "FB05",
+          "question": "The politician's speech was deliberately __________, leaving the audience unsure about his actual position on the issue.",
+          "options": ["transparent", "ambiguous", "precise", "definitive"],
+          "answer": "ambiguous"
+        },
+        {
+          "id": "FB06",
+          "question": "The discovery of new evidence __________ the researcher's original hypothesis about the ancient civilization.",
+          "options": ["confirmed", "disputed", "validated", "corroborated"],
+          "answer": "disputed"
+        },
+        {
+          "id": "FB07",
+          "question": "The company offered a generous __________ package to employees who had been with the firm for more than ten years.",
+          "options": ["retirement", "disciplinary", "recruitment", "probationary"],
+          "answer": "retirement"
+        },
+        {
+          "id": "FB08",
+          "question": "The documentary film aims to __________ awareness about environmental issues affecting marine ecosystems.",
+          "options": ["diminish", "raise", "overlook", "reduce"],
+          "answer": "raise"
+        },
+        {
+          "id": "FB09",
+          "question": "The chef is known for creating dishes that __________ traditional recipes with modern cooking techniques.",
+          "options": ["abandon", "reject", "fuse", "disregard"],
+          "answer": "fuse"
+        },
+        {
+          "id": "FB10",
+          "question": "After several failed attempts, the team finally managed to __________ a solution to the complex technical problem.",
+          "options": ["complicate", "devise", "misunderstand", "overlook"],
+          "answer": "devise"
+        }
+      ]
+    },
+    {
+      "name": "Para Jumbles (Sentence Rearrangement)",
+      "questions": [
+        {
+          "id": "PJ01",
+          "question": "Arrange the following sentences in the correct order:\nP: This is because they contain natural chemicals that can trigger allergic reactions.\nQ: However, some people need to be careful when consuming certain foods.\nR: Food allergies affect approximately 5% of adults and 8% of children.\nS: Most people can enjoy a wide variety of foods without any problems.",
+          "options": ["SQPR", "SRQP", "QRPS", "SPRQ"],
+          "answer": "SQPR"
+        },
+        {
+          "id": "PJ02",
+          "question": "Arrange the following sentences in the correct order:\nP: These devices have transformed how we communicate, work, and access information.\nQ: Mobile phones have become an essential part of modern life.\nR: However, this constant connectivity has also led to concerns about digital addiction and privacy.\nS: Today, smartphones allow users to perform tasks that once required multiple separate devices.",
+          "options": ["QPSR", "PQRS", "QSPR", "SPQR"],
+          "answer": "QPSR"
+        },
+        {
+          "id": "PJ03",
+          "question": "Arrange the following sentences in the correct order:\nP: The industrial revolution in the 18th century accelerated this process.\nQ: Cities have been centers of trade, culture, and innovation for thousands of years.\nR: Today, more than half of the world's population lives in urban areas.\nS: Urbanization increased dramatically as people moved from rural areas to find work in factories.",
+          "options": ["QPSR", "RSPQ", "QRPS", "SPRQ"],
+          "answer": "QPSR"
+        },
+        {
+          "id": "PJ04",
+          "question": "Arrange the following sentences in the correct order:\nP: Regular physical activity also improves mental health by reducing stress and anxiety.\nQ: Exercise is an essential component of a healthy lifestyle.\nR: Additionally, it helps maintain a healthy weight and reduces the risk of chronic diseases.\nS: It strengthens muscles and bones, enhances cardiovascular fitness, and boosts energy levels.",
+          "options": ["QSRP", "SRPQ", "PQRS", "RSPQ"],
+          "answer": "QSRP"
+        },
+        {
+          "id": "PJ05",
+          "question": "Arrange the following sentences in the correct order:\nP: Despite these challenges, renewable energy capacity continues to grow globally.\nQ: However, they face obstacles such as intermittency and storage limitations.\nR: Solar and wind power are increasingly cost-competitive with fossil fuels.\nS: Renewable energy sources are crucial for addressing climate change.",
+          "options": ["SRQP", "RSPQ", "QPRS", "SPRQ"],
+          "answer": "SRQP"
+        },
+        {
+          "id": "PJ06",
+          "question": "Arrange the following sentences in the correct order:\nP: This network revolutionized how information is shared and accessed.\nQ: The internet began as a project funded by the U.S. Department of Defense in the 1960s.\nR: Initially connecting just a few research computers, it has since grown to link billions of devices worldwide.\nS: Today, it has become an indispensable part of daily life for people around the globe.",
+          "options": ["QRPS", "RPSQ", "SPRQ", "QPRS"],
+          "answer": "QRPS"
+        },
+        {
+          "id": "PJ07",
+          "question": "Arrange the following sentences in the correct order:\nP: These ancient structures were built as tombs for pharaohs and their consorts.\nQ: The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.\nR: The pyramids of Egypt are among the most recognizable monuments in the world.\nS: Construction of these massive structures required advanced engineering knowledge and organizational skills.",
+          "options": ["RPSQ", "QRPS", "PQRS", "RPQS"],
+          "answer": "RPQS"
+        },
+        {
+          "id": "PJ08",
+          "question": "Arrange the following sentences in the correct order:\nP: However, they can lead to health problems if consumed in excess.\nQ: Coffee and tea are among the most popular beverages worldwide.\nR: Both drinks contain caffeine, which can improve alertness and concentration.\nS: Many people start their day with one of these beverages for their stimulating effects.",
+          "options": ["QSRP", "RSPQ", "SQPR", "PQRS"],
+          "answer": "QSRP"
+        },
+        {
+          "id": "PJ09",
+          "question": "Arrange the following sentences in the correct order:\nP: The human brain is constantly changing and adapting throughout our lives.\nQ: This ability to change is known as neuroplasticity.\nR: These changes can be influenced by our experiences, environment, and lifestyle choices.\nS: Learning new skills or recovering from brain injuries are examples of neuroplasticity in action.",
+          "options": ["PQRS", "RSPQ", "QPRS", "PQSR"],
+          "answer": "PQRS"
+        },
+        {
+          "id": "PJ10",
+          "question": "Arrange the following sentences in the correct order:\nP: Artificial intelligence systems can now perform tasks that once required human intelligence.\nQ: The rapid advancement of AI raises important ethical and societal questions.\nR: Machine learning algorithms enable computers to improve their performance over time without explicit programming.\nS: Artificial intelligence has made significant progress in recent decades.",
+          "options": ["SPRQ", "RSPQ", "QPRS", "SPQR"],
+          "answer": "SPRQ"
+        }
+      ]
+    }
+  ]
+}
+      
+    
+  
+        
+     
+    
+  

@@ -1,0 +1,311 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ assessment_title }} - EduAssess{% endblock %}
+
+{% block content %}
+<input type="hidden" id="assessment-type" value="{{ assessment_type }}">
+
+<!-- Preparation Section -->
+<div id="prep-section" class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-primary-subtle">
+                <h4 class="mb-0">{{ assessment_title }}</h4>
+            </div>
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <h5>Get Ready for Your Assessment</h5>
+                    <p class="text-muted">
+                        This assessment will evaluate your skills in 
+                        {% if assessment_type == "initial" %}
+                            quantitative reasoning, verbal ability, and logical reasoning.
+                        {% elif assessment_type == "quant" %}
+                            quantitative reasoning.
+                        {% elif assessment_type == "verbal" %}
+                            verbal ability.
+                        {% else %}
+                            logical reasoning.
+                        {% endif %}
+                    </p>
+                </div>
+                
+                <div class="alert alert-info">
+                    <h5><i class="fas fa-info-circle me-2"></i>Before you begin:</h5>
+                    <ul class="mb-0">
+                        <li>This assessment is proctored - you'll need to allow camera and microphone access.</li>
+                        <li>The assessment will auto-submit if you switch tabs or windows more than 3 times.</li>
+                        <li>
+                            {% if assessment_type == "initial" %}
+                                This assessment will take approximately 75 minutes to complete (25 minutes for each section).
+                            {% elif assessment_type == "quant" %}
+                                This assessment will take approximately 25 minutes to complete.
+                            {% elif assessment_type == "verbal" %}
+                                This assessment will take approximately 25 minutes to complete.
+                            {% else %}
+                                This assessment will take approximately 25 minutes to complete.
+                            {% endif %}
+                        </li>
+                        <li>Answer each question to the best of your ability.</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <button id="start-assessment" class="btn btn-primary btn-lg">
+                        <i class="fas fa-play-circle me-2"></i>Start Assessment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Assessment Section (hidden initially) -->
+<div id="assessment-section" class="row justify-content-center d-none">
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Main section with questions only -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary-subtle d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Assessment Questions</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Progress bar -->
+                        <div class="progress mb-3" style="height: 20px;">
+                            <div id="progress-bar" class="progress-bar bg-primary" role="progressbar" 
+                                style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        
+                        <!-- Question container -->
+                        <div id="question-container">
+                            <!-- Will be populated by JavaScript -->
+                            <div class="text-center py-4">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading questions...</span>
+                                </div>
+                                <p class="mt-3">Preparing your questions...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <!-- Right side panel with proctor elements -->
+                <div class="card mb-4 sticky-top" style="top: 20px;">
+                    <div class="card-header bg-primary-subtle">
+                        <h6 class="mb-0">Assessment Monitor</h6>
+                    </div>
+                    <div class="card-body">
+                        <!-- Timer display -->
+                        <div class="mb-3 text-center">
+                            <h5>Time Remaining</h5>
+                            <div class="timer-display fs-2 fw-bold" id="timer-display">25:00</div>
+                        </div>
+                        
+                        <hr>
+                        
+                        <!-- Question Navigator -->
+                        <h6 class="mb-2">Question Navigation</h6>
+                        <div class="question-navigator mb-4" id="question-navigator">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                        
+                        <!-- Camera feed below navigation -->
+                        <h6>Camera Feed</h6>
+                        <div class="camera-container mb-4">
+                            <video id="camera-feed" autoplay muted class="w-100 rounded"></video>
+                        </div>
+                        
+                        <!-- Proctor warning -->
+                        <div class="alert alert-danger d-none mb-3" id="proctor-warning">
+                            Warning: Camera or microphone access is required.
+                        </div>
+                        
+                        <!-- Section Submit Button -->
+                        <button class="btn btn-success w-100 mb-3" id="submit-section">
+                            <i class="fas fa-check-circle me-2"></i>Submit Section
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Results Section (hidden initially) -->
+<div id="result-section" class="row justify-content-center d-none">
+    <div class="col-md-10">
+        <div class="card mb-4">
+            <div class="card-header bg-primary-subtle">
+                <h4 class="mb-0">Assessment Results</h4>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h5>Your Assessment Score</h5>
+                        
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-3">
+                                <div class="card bg-warning-subtle">
+                                    <div class="card-body text-center">
+                                        <h6>Total</h6>
+                                        <h4 id="total-score">--/65</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card bg-primary-subtle">
+                                    <div class="card-body text-center">
+                                        <h6>Quantitative</h6>
+                                        <h4 id="quant-score">--/20</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="card bg-success-subtle">
+                                    <div class="card-body text-center">
+                                        <h6>Verbal</h6>
+                                        <h4 id="verbal-score">--/25</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="card bg-info-subtle">
+                                    <div class="card-body text-center">
+                                        <h6>Reasoning</h6>
+                                        <h4 id="reasoning-score">--/20</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-3">Topic-wise Performance</h5>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-primary-subtle">
+                                        <h6 class="mb-0">Quantitative</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="quant-topics">
+                                            <!-- Will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-success-subtle">
+                                        <h6 class="mb-0">Verbal</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="verbal-topics">
+                                            <!-- Will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-info-subtle">
+                                        <h6 class="mb-0">Reasoning</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="reasoning-topics">
+                                            <!-- Will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('dashboard') }}" id="view-dashboard" class="btn btn-primary btn-lg" disabled>
+                        <i class="fas fa-chart-bar me-2"></i>View Dashboard
+                    </a>
+                    <button id="download-summary" class="btn btn-success btn-lg">
+                        <i class="fas fa-download me-2"></i>Download Summary
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="{{ url_for('static', filename='js/proctor.js') }}"></script>
+<script src="{{ url_for('static', filename='js/assessment.js') }}"></script>
+
+<script>
+// Add PDF download functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('download-summary');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function() {
+            try {
+                // Create PDF doc
+                const doc = new jspdf.jsPDF();
+                
+                // Get the result section
+                const resultSection = document.getElementById('result-section');
+                
+                // Add title
+                doc.setFont("helvetica");
+                doc.setFontSize(22);
+                doc.setTextColor(30, 70, 125); 
+                doc.text('Assessment Results Summary', 15, 20);
+                
+                // Add date
+                doc.setFontSize(12);
+                doc.setTextColor(100, 100, 100);
+                const today = new Date();
+                doc.text(`Generated on: ${today.toLocaleDateString()}`, 15, 30);
+                
+                // Get scores
+                const totalScore = document.getElementById('total-score').textContent;
+                const quantScore = document.getElementById('quant-score').textContent;
+                const verbalScore = document.getElementById('verbal-score').textContent;
+                const reasoningScore = document.getElementById('reasoning-score').textContent;
+                
+                // Add scores
+                doc.setFontSize(16);
+                doc.setTextColor(0, 0, 0);
+                doc.text('Score Summary:', 15, 45);
+                
+                doc.setFontSize(14);
+                doc.text(`Total Score: ${totalScore}`, 20, 55);
+                doc.text(`Quantitative: ${quantScore}`, 20, 65);
+                doc.text(`Verbal: ${verbalScore}`, 20, 75);
+                doc.text(`Reasoning: ${reasoningScore}`, 20, 85);
+                
+                // Save the PDF immediately - we'll handle the complex part later
+                doc.save('assessment-results.pdf');
+                
+                console.log("PDF download completed successfully");
+            } catch (error) {
+                console.error("Error generating PDF:", error);
+                alert("There was an error generating the PDF. Please try again.");
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ level_name }} | {{ chapter_info.name }} | Learning Platform{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>{{ chapter_info.name }} - {{ level_name }}</h2>
+        <a href="{{ url_for('chapter_content', category=category, chapter=chapter) }}" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-1"></i>Back to Chapter
+        </a>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-header bg-success-subtle">
+            <h4 class="mb-0">Practice Instructions</h4>
+        </div>
+        <div class="card-body">
+            <p>You will be presented with a series of problems to solve. Try to answer them correctly to improve your skills in this topic.</p>
+            <p>Click the Start button below when you're ready to begin.</p>
+            
+            <div class="text-center mt-4">
+                <button class="btn btn-success btn-lg px-5">
+                    <i class="fas fa-play me-2"></i>Start Practice
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Example Practice Questions (placeholder) -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">Content</h5>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle me-2"></i>
+                Example practice content would appear here once the practice starts. This would include:
+                <ul class="mb-0 mt-2">
+                    <li>Questions specific to the {{ chapter_info.name }} chapter</li>
+                    <li>Difficulty level appropriate for {{ level_name }}</li>
+                    <li>Instant feedback on your answers</li>
+                    <li>Explanations and solutions</li>
+                </ul>
+            </div>
+            
+            {% if category == 'quant' %}
+                <div class="mt-4">
+                    <h6>Example Formulas for {{ chapter_info.name }}:</h6>
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            {% if chapter == 'number-systems' %}
+                                <ul>
+                                    <li>Greatest Common Divisor (GCD): \( \gcd(a, b) \)</li>
+                                    <li>Least Common Multiple (LCM): \( \text{lcm}(a, b) = \frac{|a \times b|}{\gcd(a, b)} \)</li>
+                                    <li>Converting fractions to decimals: \( \frac{a}{b} = a \div b \)</li>
+                                </ul>
+                            {% elif chapter == 'algebra' %}
+                                <ul>
+                                    <li>Quadratic Formula: \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)</li>
+                                    <li>Completing the Square: \( ax^2 + bx + c = a(x + \frac{b}{2a})^2 + (c - \frac{b^2}{4a}) \)</li>
+                                    <li>Binomial Theorem: \( (a + b)^n = \sum_{k=0}^{n} {n \choose k} a^{n-k} b^k \)</li>
+                                </ul>
+                            {% elif chapter == 'geometry' %}
+                                <ul>
+                                    <li>Area of a Circle: \( A = \pi r^2 \)</li>
+                                    <li>Pythagorean Theorem: \( a^2 + b^2 = c^2 \)</li>
+                                    <li>Volume of a Sphere: \( V = \frac{4}{3} \pi r^3 \)</li>
+                                </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- MathJax for rendering LaTeX formulas -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endblock %}

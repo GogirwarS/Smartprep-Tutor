@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ chapter_info.name }} | {{ category_name }} | Learning Platform{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>{{ chapter_info.name }}</h2>
+        <a href="{{ url_for('category_chapters', category=category) }}" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-1"></i>Back to {{ category_name }} Chapters
+        </a>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">Chapter Overview</h4>
+                <span class="badge bg-primary">{{ chapter_info.level }}</span>
+            </div>
+        </div>
+        <div class="card-body">
+            <p class="lead">{{ chapter_info.description }}</p>
+            <p>Choose from the practice options below to start learning this chapter.</p>
+        </div>
+    </div>
+    
+    <div class="row g-4">
+        <!-- Basic Practice Set -->
+        <div class="col-md-4">
+            <div class="card practice-option h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3 text-success">
+                        <i class="fas fa-book-open fa-3x"></i>
+                    </div>
+                    <h5 class="card-title">Basic Practice Set</h5>
+                    <p class="card-text">Fundamental concepts and simple problems</p>
+                    <a href="{{ url_for('practice', category=category, chapter=chapter, level='basic') }}" class="btn btn-success mt-3">Start Practice</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Advanced Practice Set -->
+        <div class="col-md-4">
+            <div class="card practice-option h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3 text-success">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <h5 class="card-title">Advanced Practice Set</h5>
+                    <p class="card-text">Challenging problems for more practice</p>
+                    <a href="{{ url_for('practice', category=category, chapter=chapter, level='advanced') }}" class="btn btn-success mt-3">Start Practice</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Test -->
+        <div class="col-md-4">
+            <div class="card practice-option h-100">
+                <div class="card-body text-center">
+                    <div class="mb-3 text-success">
+                        <i class="fas fa-clipboard-check fa-3x"></i>
+                    </div>
+                    <h5 class="card-title">Chapter Test</h5>
+                    <p class="card-text">Test your knowledge of this chapter</p>
+                    <a href="{{ url_for('practice', category=category, chapter=chapter, level='test') }}" class="btn btn-success mt-3">Start Practice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

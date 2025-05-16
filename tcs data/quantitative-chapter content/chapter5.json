@@ -1,0 +1,34 @@
+{
+    "chapter_title": "Profit & Loss",
+    "sections": [
+      {
+        "title": "Basic Definitions",
+        "content": [
+          "Cost Price (C.P.): The price at which an article is purchased.",
+          "Selling Price (S.P.): The price at which an article is sold.",
+          "Profit or Gain: If S.P. > C.P., the seller makes a profit.",
+          "Loss: If S.P. < C.P., the seller incurs a loss.",
+          "Marked Price (M.P.): The displayed price of the article. If discount is given, then S.P. = M.P. - Discount."
+        ]
+      },
+      {
+        "title": "Important Formulae",
+        "content": [
+          "1. Gain = S.P. - C.P.",
+          "2. Loss = C.P. - S.P.",
+          "3. Gain or Loss is always calculated on C.P.",
+          "4. Gain % = (Gain / C.P.) × 100",
+          "5. Loss % = (Loss / C.P.) × 100",
+          "6. S.P. = [(100 + Gain%) / 100] × C.P.",
+          "7. S.P. = [(100 - Loss%) / 100] × C.P.",
+          "8. C.P. = [100 / (100 + Gain%)] × S.P.",
+          "9. C.P. = [100 / (100 - Loss%)] × S.P.",
+          "10. Sold at 35% gain → S.P. = 135% of C.P.",
+          "11. Sold at 35% loss → S.P. = 65% of C.P.",
+          "12. Selling two items, one at x% gain and one at x% loss → always a net loss.",
+          "13. Using false weights while claiming to sell at C.P. → Gain % = (Error / (True Value − Error)) × 100"
+        ]
+      }
+    ]
+  }
+  

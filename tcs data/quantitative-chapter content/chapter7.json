@@ -1,0 +1,52 @@
+{
+    "chapter_title": "Compound Interest",
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": [
+          "Principal (P): The initial sum of money.",
+          "Rate (R): Annual interest rate in percent.",
+          "Time (n): Number of years."
+        ]
+      },
+      {
+        "title": "Formulas for Compound Interest",
+        "content": [
+          "1. When interest is compounded annually:",
+          "Amount (A) = P × (1 + R/100)^n",
+          "Compound Interest (CI) = A - P"
+        ]
+      },
+      {
+        "title": "Compounding Period Variations",
+        "content": [
+          "2. When interest is compounded half-yearly:",
+          "Amount = P × (1 + R/200)^(2n)",
+          "3. When interest is compounded quarterly:",
+          "Amount = P × (1 + R/400)^(4n)"
+        ]
+      },
+      {
+        "title": "Fractional Time",
+        "content": [
+          "4. If time is in fraction (e.g., 3.5 years):",
+          "Amount = P × (1 + R/100)^3 × (1 + (R × 0.5)/100)"
+        ]
+      },
+      {
+        "title": "Different Rates for Different Years",
+        "content": [
+          "5. If rates are R1% for 1st year, R2% for 2nd year, R3% for 3rd year:",
+          "Amount = P × (1 + R1/100) × (1 + R2/100) × (1 + R3/100)"
+        ]
+      },
+      {
+        "title": "Present Worth",
+        "content": [
+          "6. Present worth of Rs. X due n years hence:",
+          "Present Worth = X / (1 + R/100)^n"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to EduAssess{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="welcome-section">
+            <h1 class="display-4 mb-4">Welcome to EduAssess</h1>
+            
+
+            
+            <p class="lead mb-4">
+                Discover your academic strengths and areas for improvement with our comprehensive 
+                assessment platform. Track your progress and improve your skills in quantitative, 
+                verbal, and reasoning abilities.
+            </p>
+            
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('dashboard') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-chart-line me-2"></i>Go to Dashboard
+                </a>
+            {% else %}
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-user-plus me-2"></i>Get Started
+                    </a>
+                    <a href="{{ url_for('login') }}" class="btn btn-outline-secondary btn-lg">
+                        <i class="fas fa-sign-in-alt me-2"></i>Login
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Features section -->
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-body text-center">
+                        <div class="subject-icon text-primary">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="card-title">Comprehensive Assessment</h4>
+                        <p class="card-text">
+                            Evaluate your skills across quantitative reasoning, 
+                            verbal ability, and logical reasoning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-body text-center">
+                        <div class="subject-icon text-success">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="card-title">Detailed Analytics</h4>
+                        <p class="card-text">
+                            Track your progress over time with visual representations 
+                            of your performance across different topics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 dashboard-card">
+                    <div class="card-body text-center">
+                        <div class="subject-icon text-info">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="card-title">Personalized Insights</h4>
+                        <p class="card-text">
+                            Identify your strengths and weaknesses to focus your 
+                            efforts on areas that need improvement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+{% endblock %}

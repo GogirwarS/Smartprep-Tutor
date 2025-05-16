@@ -1,0 +1,107 @@
+{
+  "title": "Number Systems",
+  "description": "Basic concepts of number systems, integers, fractions, and decimals",
+  "level": "Basic",
+  "formulas": [
+    {
+      "title": "GCD (Greatest Common Divisor)",
+      "formula": "GCD(a, b) = largest number that divides both a and b without a remainder",
+      "example": "GCD(12, 18) = 6"
+    },
+    {
+      "title": "LCM (Least Common Multiple)",
+      "formula": "LCM(a, b) = (a × b) ÷ GCD(a, b)",
+      "example": "LCM(4, 6) = (4 × 6) ÷ GCD(4, 6) = 24 ÷ 2 = 12"
+    },
+    {
+      "title": "Prime Factorization",
+      "formula": "Express a number as a product of its prime factors",
+      "example": "60 = 2² × 3 × 5"
+    }
+  ],
+  "practice": {
+    "basic": [
+      {
+        "question": "Find the GCD of 24 and 36",
+        "options": {
+          "A": "6",
+          "B": "12",
+          "C": "18",
+          "D": "24"
+        },
+        "correct_option": "B",
+        "explanation": "The GCD of 24 and 36 is 12 because 12 is the largest number that divides both 24 and 36 without a remainder."
+      },
+      {
+        "question": "Calculate the LCM of 8 and 12",
+        "options": {
+          "A": "12",
+          "B": "24",
+          "C": "36",
+          "D": "48"
+        },
+        "correct_option": "B",
+        "explanation": "LCM(8, 12) = (8 × 12) ÷ GCD(8, 12) = 96 ÷ 4 = 24"
+      }
+    ],
+    "advanced": [
+      {
+        "question": "If the LCM of two numbers is 84 and their GCD is 6, find one pair of numbers that satisfy these conditions.",
+        "options": {
+          "A": "12 and 42",
+          "B": "14 and 36",
+          "C": "18 and 28",
+          "D": "24 and 56"
+        },
+        "correct_option": "A",
+        "explanation": "The product of two numbers = LCM × GCD = 84 × 6 = 504. The pair 12 and 42 works because 12 × 42 = 504, and GCD(12, 42) = 6, LCM(12, 42) = 84."
+      },
+      {
+        "question": "Find the smallest positive integer that when divided by 12, 15, and 20 leaves remainders 5, 8, and 13 respectively.",
+        "options": {
+          "A": "125",
+          "B": "173",
+          "C": "233",
+          "D": "293"
+        },
+        "correct_option": "D",
+        "explanation": "The LCM of 12, 15, and 20 is 60. The number is of the form 60k + r where r is the remainder. Checking each option, 293 is the answer as 293 = 60 × 4 + 53, and when divided by 12, 15, and 20, leaves remainders 5, 8, and 13."
+      }
+    ],
+    "test": [
+      {
+        "question": "Find the GCD of 54, 90, and 120.",
+        "options": {
+          "A": "3",
+          "B": "6",
+          "C": "9",
+          "D": "12"
+        },
+        "correct_option": "B",
+        "explanation": "GCD(54, 90, 120) = 6 as 6 is the largest number that divides all three numbers without a remainder."
+      },
+      {
+        "question": "Calculate the LCM of 18, 24, and 30.",
+        "options": {
+          "A": "60",
+          "B": "90",
+          "C": "120",
+          "D": "180"
+        },
+        "correct_option": "C",
+        "explanation": "LCM(18, 24, 30) = 120 as 120 is the smallest number that is divisible by all three numbers."
+      },
+      {
+        "question": "If the product of two numbers is 2310 and their GCD is 11, what is their LCM?",
+        "options": {
+          "A": "210",
+          "B": "231",
+          "C": "252",
+          "D": "330"
+        },
+        "correct_option": "A",
+        "explanation": "LCM = Product of numbers ÷ GCD = 2310 ÷ 11 = 210"
+      }
+    ]
+  }
+}

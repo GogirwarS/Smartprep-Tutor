@@ -1,0 +1,31 @@
+{
+    "chapter_title": "Divisibility Rules and Numbers",
+    "image_path": "images/divisibility_rules.png",
+    "sections": [
+      {
+        "title": "Some Basic Formulae",
+        "content": [
+          "(a + b)(a - b) = a² - b²",
+          "(a + b)² = a² + b² + 2ab",
+          "(a - b)² = a² + b² - 2ab",
+          "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca)",
+          "(a³ + b³) = (a + b)(a² - ab + b²)",
+          "(a³ - b³) = (a - b)(a² + ab + b²)",
+          "(a³ + b³ + c³ - 3abc) = (a + b + c)(a² + b² + c² - ab - bc - ac)",
+          "When a + b + c = 0, then a³ + b³ + c³ = 3abc",
+          "(a + b)ⁿ = aⁿ + (nC1)aⁿ⁻¹b + (nC2)aⁿ⁻²b² + … + (nCn-1)abⁿ⁻¹ + bⁿ"
+        ]
+      },
+      {
+        "title": "Laws of Indices",
+        "content": [
+          "a^m × a^n = a^(m+n)",
+          "a^m ÷ a^n = a^(m-n)",
+          "(a^m)^n = a^(mn)",
+          "(ab)^n = a^n × b^n",
+          "a^0 = 1"
+        ]
+      }
+    ]
+  }
+  

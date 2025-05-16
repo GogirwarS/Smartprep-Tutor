@@ -1,0 +1,505 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard - EduAssess{% endblock %}
+
+{% block head %}
+<style>
+    .category-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .chapter-item {
+        border-radius: 8px;
+        transition: background-color 0.2s;
+        cursor: pointer;
+    }
+    
+    .chapter-item:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
+    
+    .chapter-content {
+        display: none;
+    }
+    
+    .chapter-content.active {
+        display: block;
+    }
+    
+    .practice-option {
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+    
+    .practice-option:hover {
+        transform: translateY(-3px);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Your Dashboard</h1>
+            <a href="{{ url_for('assessment', assessment_type='initial') }}" class="btn btn-outline-primary">
+                <i class="fas fa-edit me-2"></i>Take New Assessment
+            </a>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!-- Loading indicator -->
+<div id="loading-indicator" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-3">Loading your dashboard...</p>
+</div>
+
+<!-- Dashboard content (hidden until data loads) -->
+<div id="dashboard-content" class="d-none">
+    <!-- Learning Categories Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h4 class="mb-3">Learning Categories</h4>
+            <div class="row g-4">
+                <!-- Quantitative Category -->
+                <div class="col-md-4">
+                    <div class="card category-card" id="quant-category">
+                        <div class="card-body text-center">
+                            <div class="display-4 mb-3 text-primary">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h5 class="card-title">Quantitative</h5>
+                            <p class="card-text text-muted">Number systems, algebra, geometry, and more</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Verbal Category -->
+                <div class="col-md-4">
+                    <div class="card category-card" id="verbal-category">
+                        <div class="card-body text-center">
+                            <div class="display-4 mb-3 text-success">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h5 class="card-title">Verbal</h5>
+                            <p class="card-text text-muted">Reading comprehension, grammar, vocabulary</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reasoning Category -->
+                <div class="col-md-4">
+                    <div class="card category-card" id="reasoning-category">
+                        <div class="card-body text-center">
+                            <div class="display-4 mb-3 text-info">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5 class="card-title">Reasoning</h5>
+                            <p class="card-text text-muted">Logical reasoning, pattern recognition, puzzles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personalized Recommendations Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary-subtle">
+                    <h4 class="mb-0"><i class="fas fa-lightbulb me-2"></i>Personalized Recommendations</h4>
+                </div>
+                <div class="card-body">
+                    <div id="recommendations-container">
+                        {% if quant_topics or verbal_topics or reasoning_topics %}
+                            <div class="row g-4">
+                                <!-- Quantitative Recommendations -->
+                                <div class="col-md-4">
+                                    <h5 class="text-primary mb-2"><i class="fas fa-calculator me-2"></i>Quantitative</h5>
+                                    {% if quant_topics %}
+                                        {% set lowest_topics = [] %}
+                                        {% for topic in quant_topics %}
+                                            {% if (topic.correct / topic.total) < 0.5 %}
+                                                {% set _ = lowest_topics.append(topic) %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        
+                                        {% if lowest_topics %}
+                                            <div class="alert alert-warning">
+                                                <p class="mb-2">Focus on improving these topics:</p>
+                                                <ul class="mb-0">
+                                                    {% for topic in lowest_topics[:3] %}
+                                                        <li>{{ topic.topic }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% else %}
+                                            <div class="alert alert-success">
+                                                <p class="mb-0">You're doing well in Quantitative Reasoning!</p>
+                                            </div>
+                                        {% endif %}
+                                    {% else %}
+                                        <div class="alert alert-info">
+                                            <p class="mb-0">Complete an assessment to get recommendations.</p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                
+                                <!-- Verbal Recommendations -->
+                                <div class="col-md-4">
+                                    <h5 class="text-success mb-2"><i class="fas fa-book me-2"></i>Verbal</h5>
+                                    {% if verbal_topics %}
+                                        {% set lowest_topics = [] %}
+                                        {% for topic in verbal_topics %}
+                                            {% if (topic.correct / topic.total) < 0.5 %}
+                                                {% set _ = lowest_topics.append(topic) %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        
+                                        {% if lowest_topics %}
+                                            <div class="alert alert-warning">
+                                                <p class="mb-2">Focus on improving these topics:</p>
+                                                <ul class="mb-0">
+                                                    {% for topic in lowest_topics[:3] %}
+                                                        <li>{{ topic.topic }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% else %}
+                                            <div class="alert alert-success">
+                                                <p class="mb-0">You're doing well in Verbal Ability!</p>
+                                            </div>
+                                        {% endif %}
+                                    {% else %}
+                                        <div class="alert alert-info">
+                                            <p class="mb-0">Complete an assessment to get recommendations.</p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                
+                                <!-- Reasoning Recommendations -->
+                                <div class="col-md-4">
+                                    <h5 class="text-info mb-2"><i class="fas fa-brain me-2"></i>Reasoning</h5>
+                                    {% if reasoning_topics %}
+                                        {% set lowest_topics = [] %}
+                                        {% for topic in reasoning_topics %}
+                                            {% if (topic.correct / topic.total) < 0.5 %}
+                                                {% set _ = lowest_topics.append(topic) %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        
+                                        {% if lowest_topics %}
+                                            <div class="alert alert-warning">
+                                                <p class="mb-2">Focus on improving these topics:</p>
+                                                <ul class="mb-0">
+                                                    {% for topic in lowest_topics[:3] %}
+                                                        <li>{{ topic.topic }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% else %}
+                                            <div class="alert alert-success">
+                                                <p class="mb-0">You're doing well in Logical Reasoning!</p>
+                                            </div>
+                                        {% endif %}
+                                    {% else %}
+                                        <div class="alert alert-info">
+                                            <p class="mb-0">Complete an assessment to get recommendations.</p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="alert alert-info">
+                                <p class="mb-0">Complete assessments to receive personalized recommendations based on your performance.</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="{{ url_for('static', filename='js/chart_utils.js') }}"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Show dashboard content, hide loading indicator
+    document.getElementById('loading-indicator').classList.add('d-none');
+    document.getElementById('dashboard-content').classList.remove('d-none');
+    
+    // Add event listeners to category cards
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const categoryId = this.id;
+            // Extract the category name from the id (e.g., 'quant-category' -> 'quant')
+            const category = categoryId.split('-')[0];
+            
+            // Navigate to the category page
+            window.location.href = `/category/${category}`;
+        });
+    });
+    
+    // Initialize charts
+    fetchAssessmentData();
+});
+
+// Fetch assessment data for charts
+async function fetchAssessmentData() {
+    try {
+        const response = await fetch('/api/get-assessment-data');
+        const data = await response.json();
+        
+        // Now we have the data, create charts with it
+        setupProgressCharts(data.history);
+        
+        // Display topic performance
+        renderTopicPerformance(data.topics);
+        
+    } catch (error) {
+        console.error('Error fetching assessment data:', error);
+    }
+}
+
+// Set up all progress charts
+function setupProgressCharts(historyData) {
+    if (!historyData) return;
+    
+    // Create overall progress chart
+    createOverallProgressChart('overall-progress-chart', historyData);
+    
+    // Create individual category progress charts
+    if (historyData.quant && historyData.quant.length > 0) {
+        createProgressChart('quant-progress-chart', historyData.quant, 'Quantitative Progress', 20);
+    }
+    
+    if (historyData.verbal && historyData.verbal.length > 0) {
+        createProgressChart('verbal-progress-chart', historyData.verbal, 'Verbal Progress', 25);
+    }
+    
+    if (historyData.reasoning && historyData.reasoning.length > 0) {
+        createProgressChart('reasoning-progress-chart', historyData.reasoning, 'Reasoning Progress', 20);
+    }
+}
+
+// Create a single progress chart
+function createProgressChart(containerId, data, title, maxScore) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const labels = data.map(item => item.date);
+    const scores = data.map(item => item.score);
+    
+    const ctx = container.getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Score',
+                data: scores,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 2,
+                tension: 0.1,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: title
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return `Score: ${context.parsed.y}/${maxScore}`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: maxScore,
+                    title: {
+                        display: true,
+                        text: 'Score'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Create the overall progress chart showing all categories
+function createOverallProgressChart(containerId, historyData) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    // Get all unique dates from all categories
+    const allDates = new Set();
+    Object.values(historyData).forEach(category => {
+        category.forEach(item => allDates.add(item.date));
+    });
+    
+    // Sort dates chronologically
+    const dates = Array.from(allDates).sort();
+    
+    // Prepare datasets
+    const quantData = createDataPointsForDates(dates, historyData.quant || [], 20);
+    const verbalData = createDataPointsForDates(dates, historyData.verbal || [], 25);
+    const reasoningData = createDataPointsForDates(dates, historyData.reasoning || [], 20);
+    
+    const ctx = container.getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [
+                {
+                    label: 'Quantitative',
+                    data: quantData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2,
+                    tension: 0.1,
+                    fill: false
+                },
+                {
+                    label: 'Verbal',
+                    data: verbalData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    tension: 0.1,
+                    fill: false
+                },
+                {
+                    label: 'Reasoning',
+                    data: reasoningData,
+                    backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                    borderColor: 'rgba(255, 159, 64, 1)',
+                    borderWidth: 2,
+                    tension: 0.1,
+                    fill: false
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Overall Progress'
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Percentage Score'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Helper to create data points for dates with percentage scores
+function createDataPointsForDates(dates, categoryData, maxScore) {
+    return dates.map(date => {
+        const matchingEntry = categoryData.find(entry => entry.date === date);
+        if (matchingEntry) {
+            return (matchingEntry.score / maxScore) * 100;
+        }
+        return null; // No data for this date
+    });
+}
+
+// Display topic performance with progress bars
+function renderTopicPerformance(topicsData) {
+    if (!topicsData) return;
+    
+    renderCategoryTopics('quant-topics', topicsData.quant || []);
+    renderCategoryTopics('verbal-topics', topicsData.verbal || []);
+    renderCategoryTopics('reasoning-topics', topicsData.reasoning || []);
+}
+
+// Render topics for a specific category
+function renderCategoryTopics(containerId, topics) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    if (topics.length === 0) {
+        container.innerHTML = '<div class="alert alert-info">No topic data available yet.</div>';
+        return;
+    }
+    
+    // Sort topics by performance (worst first)
+    topics.sort((a, b) => (a.correct / a.total) - (b.correct / b.total));
+    
+    // Display each topic
+    topics.forEach(topic => {
+        const percentage = Math.round((topic.correct / topic.total) * 100);
+        let colorClass = 'bg-success';
+        
+        if (percentage < 40) {
+            colorClass = 'bg-danger';
+        } else if (percentage < 70) {
+            colorClass = 'bg-warning';
+        }
+        
+        container.innerHTML += `
+            <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span>${topic.topic}</span>
+                    <span>${topic.correct}/${topic.total} (${percentage}%)</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar ${colorClass}" role="progressbar" 
+                         style="width: ${percentage}%;" 
+                         aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        `;
+    });
+}
+</script>
+{% endblock %}
