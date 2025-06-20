@@ -46,14 +46,6 @@ Then open your browser and go to:
 
 🌐 [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
----
-
-## 📄 Project Documentation
-
-* 📊 **Presentation Slides**: [View PPT](https://drive.google.com/file/d/your_presentation_link/view?usp=sharing)
-
----
-
 
 ## 🤝 Contributing
 
